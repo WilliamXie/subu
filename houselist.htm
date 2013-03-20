@@ -1,0 +1,175 @@
+<!-- %@ page language="java" import="java.util.*" pageEncoding="utf-8"%> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Fair</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+	<link rel="stylesheet" type="text/css" href="themes/icon.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/searchbox.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/align.css" /> 
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/pic.js"></script>
+    
+</head>
+
+
+<body bgcolor="#EEEEEE">
+<a href="index.htm"><img border=0 src="img/studentfair.jpg" width="243" height="81" /></a>
+  <div class="right">
+  <a  href="myaccount.htm">Hi, Sherri</a> &nbsp;<a href="login.htm">Sign out</a>
+</div>
+<div  style="background:#990066;padding:5px;height:35px; align:center">
+	<ul class="dmenu" style="front:#e2ebf5;">
+   	  <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-sell" href="goodslist.htm" class="accordion" accesskey="B" title="Access:alt+b" ><font color="black">Buy and Sell</font></a>
+	<ul>
+    <li><a href="goodslist.htm" icon="icon-buy"  >Buy</a></li>
+	<li><a href="goodpost.htm" icon="icon-sell">Sell</a></li>
+	</ul>
+</li>
+ 
+<li>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-house" href="houselist.htm" class="accordion" accesskey="L" title="Access:Alt+L" ><font color="black"> Live </font></a>
+	<ul>
+	<li><a href="houselist.htm" icon="icon-house" >Room</a></li>
+	<li><a href="housepost.htm" icon="icon-person" >Person</a></li>
+	</ul>
+</li>
+	  <li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </li>
+<li > 
+	<a icon="icon-reload" href="exchangelist.htm" class="accordion" accesskey="E" title="Access:Alt+E" ><font color="black">Exchange</font></a>
+	<ul>
+	<li><a  href="exchangelist.htm" icon="icon-mary"  >Skills</a></li>
+	<li><a href="exchangepost.htm" icon="icon-post">Post</a></li>
+	</ul>
+	</li>
+      <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-music" href="countries.htm" class="accordion" accesskey="s" title="Access:Alt+S"><font color="black"> Event </font></a>
+	<ul>
+	<li><a  href="index.htm" icon="icon-music" accesskey="i" title="Access:alt+b" >Attend</a></li>
+	<li><a href="index.htm" icon="icon-organise">Organise</a></li>
+	</ul>
+</li>
+</ul>
+		
+		<div class="right"> 
+		<input type="text" value="Search here..."  onblur="if(this.value=='') this.value='Type here...'" onfocus="if(this.value =='Type here...' ) this.value=''" /> 
+        <a href="#" onclick="document.getElementById('form-search').submit()" > <img src="themes/icons/searchbt.png" width="38" /> </a>
+        </div>
+		
+  </ul>
+</div>
+
+<!--end of header-->
+<p><p>
+
+<table border="0" width="800"  frame="border" align="center" cellpadding="40">
+        <tr>
+                <td >
+                <a href="housedetail.htm" >
+                <img border="0" src="img/h1.jpg" width="180" height="180">
+                </a>
+                </td>
+                <td  align="center">
+                 <a href="housedetail.htm">
+                 <img border="0" src="img/h2.jpg" width="180" height="180">
+                  </a>             
+               </td>
+               <td align="center">
+                 <a href="housedetail.htm">
+               <img border="0" src="img/h3.jpg" width="180" height="180">
+               </a>
+               </td>
+               <td align="center">
+                 <a href="housedetail.htm">
+               <img border="0" src="img/h4.jpg" width="180" height="180">
+               </a>
+               </td>
+             
+        </tr>
+</table>
+<br>
+<table border="0" width="600"  frame="border" align="center" cellpadding="20">
+        <tr>
+                <td align="center" >
+                  <a href="housedetail.htm">
+                <img border="0" src="img/h3.jpg" width="180" height="180">
+               
+                <br />
+              <h5>  Charminster </h5>
+                <p>
+            	 £ 350 per month
+            	 </a>
+                </td>
+                <td  align="center">
+                   <a href="housedetail.htm">
+                 <img border="0" src="img/h4.jpg" width="180" height="180">
+                             
+                  <br />
+              <h5>  Winton </h5>
+                <p>
+            	 £ 650 per month
+            	</a>  
+               </td>
+               <td align="center">
+                 <a href="housedetail.htm">
+               <img border="0" src="img/h5.jpg" width="180" height="180">
+               <br />
+             
+              <h5>  Lansdowne </h5>
+                <p>
+            	 £ 550 per month
+            	  </a>
+               </td>
+               <td align="center">
+               <a href="housedetail.htm">
+               <img border="0" src="img/h6.jpg" width="180" height="180">
+               <br />
+              <h5>  Parkstone </h5>
+                <p>
+            	 £ 400 per month
+            	</a>
+               </td>
+             
+        </tr>
+</table>
+<br>
+<br>
+<!--footer -->
+
+
+<!--footer -->
+<table align="center" border="0" width="400" height="10">
+<tr>	<td width="100" align="center">
+                <a href="http://bournemouth.ac.uk">
+                BU
+                </a>
+                </td>
+                <td width="100" align="center">
+                <a href="http://#">
+                Help
+                </a>
+                </td>
+                </a> 
+                <td width="100" align="center">
+                 <a href="http://#">
+                Contact US
+                  </a>             
+               </td>
+               <td width="100" align="center">
+               <a href="http://#">
+               Accessibility
+               </a>
+               </td>
+        </tr>
+</table>
+</p>
+
+</body>
+</html>
+

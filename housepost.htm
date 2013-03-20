@@ -1,0 +1,193 @@
+<!-- %@ page language="java" import="java.util.*" pageEncoding="utf-8"%> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Fair</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+	<link rel="stylesheet" type="text/css" href="themes/icon.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/searchbox.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/align.css" /> 
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/pic.js"></script>
+    
+</head>
+
+
+<body bgcolor="#EEEEEE">
+<a href="index.htm"><img border=0 src="img/studentfair.jpg" width="243" height="81" /></a>
+  <div class="right">
+  <a  href="myaccount.htm">Hi, Sherri</a> &nbsp;<a href="login.htm">Sign out</a>
+</div>
+<div  style="background:#990066;padding:5px;height:35px; align:center">
+	<ul class="dmenu" style="front:#e2ebf5;">
+   	  <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-sell" href="goodslist.htm" class="accordion" accesskey="B" title="Access:alt+b" ><font color="black">Buy and Sell</font></a>
+	<ul>
+    <li><a href="goodslist.htm" icon="icon-buy"  >Buy</a></li>
+	<li><a href="goodpost.htm" icon="icon-sell">Sell</a></li>
+	</ul>
+</li>
+ 
+<li>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-house" href="houselist.htm" class="accordion" accesskey="L" title="Access:Alt+L" ><font color="black"> Live </font></a>
+	<ul>
+	<li><a href="houselist.htm" icon="icon-house" >Room</a></li>
+	<li><a href="housepost.htm" icon="icon-person" >Person</a></li>
+	</ul>
+</li>
+	  <li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </li>
+<li > 
+	<a icon="icon-reload" href="exchangelist.htm" class="accordion" accesskey="E" title="Access:Alt+E" ><font color="black">Exchange</font></a>
+	<ul>
+	<li><a  href="exchangelist.htm" icon="icon-mary"  >Skills</a></li>
+	<li><a href="exchangepost.htm" icon="icon-post">Post</a></li>
+	</ul>
+	</li>
+      <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-music" href="countries.htm" class="accordion" accesskey="s" title="Access:Alt+S"><font color="black"> Event </font></a>
+	<ul>
+	<li><a  href="index.htm" icon="icon-music" accesskey="i" title="Access:alt+b" >Attend</a></li>
+	<li><a href="index.htm" icon="icon-organise">Organise</a></li>
+	</ul>
+</li>
+</ul>
+		
+		<div class="right"> 
+		<input type="text" value="Search here..."  onblur="if(this.value=='') this.value='Type here...'" onfocus="if(this.value =='Type here...' ) this.value=''" /> 
+        <a href="#" onclick="document.getElementById('form-search').submit()" > <img src="themes/icons/searchbt.png" width="38" /> </a>
+        </div>
+		
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+<a href="index.htm">Home Page >> </a><a href="housepost.htm">House Post</a>
+<!--end of header-->
+<p>
+<Div class="middle"><font size="+5"><h1> Post Your Room</h1></font></Div>
+<p><p>
+<form action="houselist.htm" method=post>
+<table align="center" border="0" width="500" height="55" frame="box" cellpadding="10">
+        <tr>
+                <td align="left" width="88">
+                Title:
+                <td width="100" align="left">
+                  <input type="text" />
+               </td >
+        </tr>
+         <td align="left" width="88">
+                Image File:
+                    <input type="submit" name="button" id="button" value="Choose" />
+<td width="100" align="left">
+                  <input type="text" />
+           </td >
+        <tr>
+         <td align="left" width="88">
+                Description:
+          <td width="100" align="left">
+                  <textarea name="Description" cols="19" rows="5"></textarea>
+          </td >
+        </tr>
+        <tr>
+         <td align="left" width="88">
+                Property Type:
+          <td width="100" align="left">
+			<input name="" type="radio" value="" /> House &nbsp;&nbsp;
+                <input name="" type="radio" value="" /> Flat &nbsp;&nbsp;
+             <input name="" type="radio" value="" /> Bunglow<br />
+          </td >
+        </tr>
+        <tr>
+         <td align="left" width="88">
+                Number of Bedrooms:
+    <td width="100" align="left">
+                  <select name="numberofbed"> 
+                 	<option>6</option>
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                   </select>
+      </td >
+        </tr>
+        <tr>
+         <td align="left" width="88">
+                Price:  
+          <td width="100" align="left">
+                  £<input type="text" />
+          </td >
+        </tr>
+        <tr>
+         <td align="left" width="88">
+                Area:
+          <td width="100" align="left">
+                  <input type="text" />
+          </td >
+        </tr>
+          <tr>
+         <td align="left" width="88">
+                Landlord Name:
+            <td width="100" align="left">
+                  <input type="text" />
+            </td >
+        </tr>  <tr>
+         <td align="left" width="88">
+                 Landlord Number:
+          <td width="100" align="left">
+                  <input type="text" />
+          </td >
+        </tr>
+        <tr><td></td><td>
+          <input name="" type="submit" />
+          </td>
+</table>
+<br>
+</form>
+
+
+
+<!--footer -->
+
+
+<!--footer -->
+<table align="center" border="0" width="400" height="10">
+<tr>	<td width="100" align="center">
+                <a href="http://bournemouth.ac.uk">
+                BU
+                </a>
+                </td>
+                <td width="100" align="center">
+                <a href="http://#">
+                Help
+                </a>
+                </td>
+                </a> 
+                <td width="100" align="center">
+                 <a href="http://#">
+                Contact US
+                  </a>             
+               </td>
+               <td width="100" align="center">
+               <a href="http://#">
+               Accessibility
+               </a>
+               </td>
+        </tr>
+</table>
+</p>
+
+</body>
+</html>

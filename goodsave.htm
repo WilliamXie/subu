@@ -1,0 +1,88 @@
+<!-- %@ page language="java" import="java.util.*" pageEncoding="utf-8"%> -->
+
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<%@ page contentType="text/html; charset=utf-8" %>
+<%@ page language="java" %>
+<%@ page import="com.mysql.jdbc.Driver" %>
+<%@ page import="java.sql.*" 
+		 import="java.util.*"
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'goodsave.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <body>
+    This is my JSP page. <br>
+    
+    <%
+    String goodid="1";
+
+	/* String goodtitle;
+	String gooddesc;
+	String contact; */
+    
+	/* request.getParameter("goodtitle");
+	request.getParameter("gooddesc");
+	request.getParameter("contact"); */
+	
+	String driverName="com.mysql.jdbc.Driver";
+	String userName="root";
+	String userPasswd="root";
+	
+	
+	String dbName="fair";
+	String url="jdbc:mysql://localhost/"+dbName+"?user="+userName+"&password="+userPasswd;
+	Class.forName("com.mysql.jdbc.Driver").newInstance();
+	Connection connection=DriverManager.getConnection(url);
+	PreparedStatement  pstatement = connection.prepareStatement("insert into good ( title, description, posterid, contact ) values (?,?,?,?)");
+	
+	pstatement.setString(1, request.getParameter("goodtitle"));
+	pstatement.setString(2, request.getParameter("gooddesc"));
+	pstatement.setInt(3, 1);
+	pstatement.setString(4, request.getParameter("contact"));
+	pstatement.executeUpdate();
+    
+    Statement st = connection.createStatement();
+    String sql="SELECT   LAST_INSERT_ID();";
+
+	ResultSet rs = st.executeQuery(sql); 
+	ResultSetMetaData rmeta = rs.getMetaData();
+	int numColumns=rmeta.getColumnCount();
+
+	while(rs.next()) {
+	
+	goodid =rs.getString(1); 
+	out.print(goodid);
+} 
+    
+    %>
+   <%  request.getRequestDispatcher("/gooddetail.jsp?googid="+goodid).forward(request, response); %>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

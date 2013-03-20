@@ -1,0 +1,411 @@
+<!-- %@ page language="java" import="java.util.*" pageEncoding="utf-8"%> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Fair</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+	<link rel="stylesheet" type="text/css" href="themes/icon.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/searchbox.css" /> 
+    <link rel="stylesheet" type="text/css" href="themes/align.css" /> 
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/pic.js"></script>
+    
+</head>
+
+
+<body bgcolor="#EEEEEE">
+<a href="index.htm"><img border=0 src="img/studentfair.jpg" width="243" height="81" /></a>
+  <div class="right">
+  <a  href="myaccount.htm">Hi, Sherri</a> &nbsp;<a href="login.htm">Sign out</a>
+</div>
+<div  style="background:#990066;padding:5px;height:35px; align:center">
+	<ul class="dmenu" style="front:#e2ebf5;">
+   	  <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-sell" href="goodslist.htm" class="accordion" accesskey="B" title="Access:alt+b" ><font color="black">Buy and Sell</font></a>
+	<ul>
+    <li><a href="goodslist.htm" icon="icon-buy"  >Buy</a></li>
+	<li><a href="goodpost.htm" icon="icon-sell">Sell</a></li>
+	</ul>
+</li>
+ 
+<li>&nbsp; &nbsp; &nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-house" href="houselist.htm" class="accordion" accesskey="L" title="Access:Alt+L" ><font color="black"> Live </font></a>
+	<ul>
+	<li><a href="houselist.htm" icon="icon-house" >Room</a></li>
+	<li><a href="housepost.htm" icon="icon-person" >Person</a></li>
+	</ul>
+</li>
+	  <li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </li>
+<li > 
+	<a icon="icon-reload" href="exchangelist.htm" class="accordion" accesskey="E" title="Access:Alt+E" ><font color="black">Exchange</font></a>
+	<ul>
+	<li><a  href="exchangelist.htm" icon="icon-mary"  >Skills</a></li>
+	<li><a href="exchangepost.htm" icon="icon-post">Post</a></li>
+	</ul>
+	</li>
+      <li>&nbsp; &nbsp;&nbsp; &nbsp;</li>
+<li >
+	<a icon="icon-music" href="countries.htm" class="accordion" accesskey="s" title="Access:Alt+S"><font color="black"> Event </font></a>
+	<ul>
+	<li><a  href="index.htm" icon="icon-music" accesskey="i" title="Access:alt+b" >Attend</a></li>
+	<li><a href="index.htm" icon="icon-organise">Organise</a></li>
+	</ul>
+</li>
+</ul>
+		
+		<div class="right"> 
+		<input type="text" value="Search here..."  onblur="if(this.value=='') this.value='Type here...'" onfocus="if(this.value =='Type here...' ) this.value=''" /> 
+        <a href="#" onclick="document.getElementById('form-search').submit()" > <img src="themes/icons/searchbt.png" width="38" /> </a>
+        </div>
+		
+  </ul>
+</div>
+
+
+
+
+
+<!--end of header-->
+<a href="http://#">Home Page >> </a><a href="exchangelist.htm">Exchange</a>
+<p>
+Area: 
+ <input  type="checkbox" tabindex="a" > Bournemouth 
+ <input  type="checkbox" tabindex="a" > Boscombe
+ <input  type="checkbox" tabindex="a" > Holdenhurst
+ <input  type="checkbox" tabindex="a" > Kinson
+ <input  type="checkbox" tabindex="a" > Moordown
+ <input  type="checkbox" tabindex="a" > Pokesdown
+ <input  type="checkbox" tabindex="a" > Southbourne
+ <input  type="checkbox" tabindex="a" > Wallisdown
+ <input  type="checkbox" tabindex="a" > Westbourne
+ <input  type="checkbox" tabindex="a" > Wick
+ <input  type="checkbox" tabindex="a" > Winton
+ </p>
+
+
+<p ><font size="3" color="#003399">Skill exchange in Bournemouth</font>
+<div class="right-up" onmouseover="changeColor('b1','red')"><a href= > <input type="button" id="b1" style="background:#C6C" value="Publish Now"/> </a></div>
+</p>
+
+<p>
+
+ <a href="exchangedetail.htm" >
+
+
+<table align="center" border="0" width="800" >
+		<tr> <td width="250" align="left" >Title:
+        </td>
+      
+        <td width="100" align="center">Skill I have: 
+        </td>
+        <td width="100" align="center" >Skill I want:&nbsp;</td>
+         <td width="100"align="center" >Time: </td>
+  </tr>
+        <tr>	
+        <td width="250" >&nbsp;</td>
+     
+   <td width="100" align="center" >
+                
+               <input  type="Text" width="5" />
+                <input type="button" value="Search" />
+                
+                </td>
+     <td width="100" align="center" >
+                 <input  type="Text"  width="5" />
+                <input type="button" value="Search" />
+                </td>
+                <td width="100"></td>
+                
+        </tr>
+</table>
+
+<!-- list -->
+
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+<table align="center" border="0" width="800" >
+		<tr> 
+        <td  width="250"><H6>I can cook well and I need knowledge of accounting</H6>
+             <h7> Female 19 year-old  winton
+        </td>
+        <td width="100" > <h5>Cooking</h5>
+        </td>
+		<td  width="100" align="center">
+                <H6> Accounting</H6>
+         </td>
+         <td width="100"  align="center">
+         <H6> 2 Day before</H6>
+         </td>               
+        </tr>
+</table>
+
+<p>
+<table bgcolor="#99FF33" align="center" border="0" width="800" >
+		<tr> 
+        <td width="250"><H6> I want to learn basketball</H6>
+                	<h7> Male, 20 yearsold, Charminster
+        </td>
+        <td width="100" > <h5>Drive; Singing</h5>
+        </td>
+		<td width="100" align="center">
+                <H6> Basketball</H6>
+               
+                
+                </td>
+                <td width="100" align="center">
+                 <H6> 1 Day before</H6>
+                </td>
+                </a> 
+                
+        </tr>
+</table>
+<p>
+</a>
+<div class="middle">  
+ Page:  <u>1</u> 2  3 4 5 6 7 8</div>
+  <!--footer -->
+</p>
+<p>
+  <br>
+
+<p><br>
+
+
+<!--footer -->
+<table align="center" border="0" width="400" height="10">
+<tr>	<td width="100" align="center">
+                <a href="http://bournemouth.ac.uk">
+                BU
+                </a>
+                </td>
+                <td width="100" align="center">
+                <a href="http://#">
+                Help
+                </a>
+                </td>
+                </a> 
+                <td width="100" align="center">
+                 <a href="http://#">
+                Contact US
+                  </a>             
+               </td>
+               <td width="100" align="center">
+               <a href="http://#">
+               Accessibility
+               </a>
+               </td>
+        </tr>
+</table>
+</p>
+
+</body>
+</html>
+
+

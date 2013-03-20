@@ -1,0 +1,705 @@
+*{padding:0}
+html{margin:0;padding:0}
+body{font-family:Georgia,serif;font-size:62.5%;color:#000;background-color:#fff;margin:0}
+h1,h2,h3,h4,h5,h6,p,a,table{font-size:1em;line-height:1}
+table,img,fieldset,button,iframe{border:0}
+table{border-collapse:collapse}
+ul,ol,li{list-style:none}
+caption,th{text-align:left}
+address,caption,cite,code,dfn,var{font-style:normal;font-weight:normal}
+input,select,textarea,button{font-family:Georgia,serif;font-size:1.1em;color:#666}
+input[type=radio],input[type=checkbox]{width:15px;height:15px}
+hr,legend{display:none}
+input,button{white-space:nowrap;background-color:transparent;border:0}
+a{color:#0077d8;text-decoration:none}
+a:hover{text-decoration:underline}
+.clear:after{content:".";display:block;clear:both;height:0;visibility:hidden}
+.clear h6{margin-top:0}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearfix{display:inline-block}
+html[xmlns] .clearfix{display:block}
+* html .clearfix{height:1%}
+.hidden{display:none}
+.invisible{visibility:hidden}
+.floatLeft{float:left}
+.floatRight{float:right}
+.accessText{display:none}
+.jsVisible{display:none}
+form.standardForm .subHeading{margin-bottom:5px;font-size:1.4em;font-weight:normal}
+form.standardForm .introText{margin-bottom:20px;font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.2}
+form.standardForm .footnoteText{font-family:Arial,sans-serif;font-size:1.2em;font-style:italic;color:#666}
+form.standardForm .footnoteText span{color:#e8147b}
+form.standardForm .formError{overflow:hidden;margin-bottom:5px;font-family:Arial,sans-serif;font-size:1.2em;color:#ee127e}
+form.standardForm .grid{margin-bottom:10px}
+form.standardForm .rowTextField{padding-bottom:10px}
+form.standardForm .rowTextField label{display:block;padding-bottom:5px;font-size:1.4em}
+form.standardForm .rowTextField label span{color:#e8147b}
+form.standardForm .rowTextField label.radioButton{display:inline!important;padding:0 5px!important}
+form.standardForm .rowTextField .textFieldContainer{margin-left:-3px;padding-left:12px;background:transparent url(http://www.visitbritain.com/build/images/background-standardform-textfield.png?Lo0P=e734264afbb6f66518339b642ed275d9753)  no-repeat 0 0}
+form.standardForm .rowTextField input.textField{height:15px;padding:5px 12px 5px 0;background:transparent url(http://www.visitbritain.com/build/images/background-standardform-textfield.png?Lo0P=e734264afbb6f66518339b642ed275d9753)  no-repeat 100% -25px}
+form.standardForm .rowTextField input.textField:focus{outline:0}
+form.standardForm .rowRadioCheckButton{margin-bottom:10px}
+form.standardForm .rowRadioCheckButton .checkbox,form.standardForm .rowRadioCheckButton .ui-checkbox,form.standardForm .rowRadioCheckButton .radio,form.standardForm .rowRadioCheckButton .ui-radio{float:left;margin-right:5px}
+form.standardForm .rowRadioCheckButton label{display:block;margin-left:20px;padding-top:2px;font-family:Arial,sans-serif;font-size:1.2em;color:#666}
+form.standardForm .rowRadioCheckButton label span{color:#e8147b}
+form.standardForm .rowRadioCheckButton span.mandatory{color:#e8147b}
+form.standardForm .rowTextarea{padding-bottom:10px}
+form.standardForm .rowTextarea label{display:block;padding-bottom:5px;font-size:1.4em}
+form.standardForm .rowTextarea label span{color:#e8147b}
+form.standardForm .rowTextarea .textareaContainer{float:left;margin-left:-3px}
+form.standardForm .rowTextarea .textareaContainer-top{padding-left:15px;background:transparent url(http://www.visitbritain.com/build/images/background-dropdown.png?Lo0P=0b79795d1dbfed462ac3c098ba85f4641650)  no-repeat 0 0}
+form.standardForm .rowTextarea .textareaContainer-top-inner{width:100%;height:15px;background:transparent url(http://www.visitbritain.com/build/images/background-dropdown.png?Lo0P=0b79795d1dbfed462ac3c098ba85f4641650)  no-repeat 100% -15px}
+form.standardForm .rowTextarea textarea.textarea{display:block;max-width:600px;min-height:120px;height:120px;padding:0 10px;border:0;border-left:1px solid #bbb;border-right:1px solid #f8f8f8;background-color:#fff}
+form.standardForm .rowTextarea textarea.textarea:focus{outline:0}
+form.standardForm .rowTextarea .textareaContainer-bottom{padding-left:15px;background:transparent url(http://www.visitbritain.com/build/images/background-dropdown.png?Lo0P=0b79795d1dbfed462ac3c098ba85f4641650)  no-repeat 0 -30px}
+form.standardForm .rowTextarea .textareaContainer-bottom-inner{width:100%;height:15px;background:transparent url(http://www.visitbritain.com/build/images/background-dropdown.png?Lo0P=0b79795d1dbfed462ac3c098ba85f4641650)  no-repeat 100% -45px}
+form.standardForm .formButtons .footnoteText{padding-top:4px;width:300px}
+form.standardForm .formButtons .actionButton{float:right;margin-left:15px}
+form.standardForm .textField-small,form.standardForm select.selectField-small{width:116px}
+form.standardForm .textField-medium,form.standardForm select.selectField-medium,form.standardForm textarea.textarea-medium{width:276px}
+form.standardForm .textField-large,form.standardForm select.selectField-large,form.standardForm .textareaContainer-large,form.standardForm textarea.textarea-large{width:460px}
+form.sidebarForm{padding:15px;background-color:#f4f4f4;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px}
+form.sidebarForm .actionButton{background-position:0 -80px}
+form.sidebarForm .actionButton:hover{background-position:0 -100px}
+form.sidebarForm .actionButton input.button{background-position:right 0}
+form.sidebarForm .actionButton:hover input.button{background-position:right -20px}
+form.sidebarForm .textField-small,form.sidebarForm select.selectField-small{width:86px}
+form.sidebarForm .textField-medium,form.sidebarForm select.selectField-medium,form.sidebarForm textarea.textarea-medium{width:246px}
+form.sidebarForm .textField-large,form.sidebarForm select.selectField-large,form.sidebarForm .textareaContainer-large,form.sidebarForm textarea.textarea-large{width:420px}
+.actionButton{display:inline-block;height:2em;padding-left:10px;background:transparent url(http://www.visitbritain.com/build/images/background-button-action2.png?Lo0P=0258b31d5e29a99c6a2ad6265592f3851215)  no-repeat 0 -80px}
+.actionButton:hover{text-decoration:none;background-position:0 -100px}
+.actionButton span{display:inline-block;height:1em;padding:4px 10px 4px 0;font-size:1.2em;color:#fff;background:transparent url(http://www.visitbritain.com/build/images/background-button-action2.png?Lo0P=0258b31d5e29a99c6a2ad6265592f3851215)  no-repeat right 0;cursor:pointer}
+.actionButton:hover span{background-position:right -20px}
+.actionButton input.button{display:block;height:20px;padding:2px 10px 6px 0;font-size:1.2em;color:#fff;background:transparent url(http://www.visitbritain.com/build/images/background-button-action2.png?Lo0P=0258b31d5e29a99c6a2ad6265592f3851215)  no-repeat right 0;cursor:pointer}
+.actionButton:hover input.button{background-position:right -20px}
+#Popup .actionButton{background-position:0 -100px}
+#Popup .actionButton:hover{background-position:0 -80px}
+#Popup .actionButton span{background-position:right -20px}
+#Popup .actionButton:hover span{background-position:right 0}
+#Popup .actionButton input.button{background-position:right -20px}
+#Popup .actionButton:hover input.button{background-position:right 0}
+.actionLink{display:inline-block;height:13px;padding:5px 30px 5px 0;font-size:1.4em;font-style:italic;color:#000;background:transparent url(http://www.visitbritain.com/build/images/icon-action-submit.png?Lo0P=d7a23cef8bf0bd0ba988e456807c2b6b510)  no-repeat 100% 0;cursor:pointer}
+.actionLink:hover{background-position:100% -23px}
+.moreLink{padding-left:10px;font-family:Arial,sans-serif;font-size:1.2em;background:transparent url(http://www.visitbritain.com/build/images/icon-link-more.png?Lo0P=e63f50319652fbadb6837817fc25821c181)  no-repeat 0 0}
+.externalLink{padding:3px 20px 3px 0;font-family:Arial,sans-serif;font-size:1.2em;background:transparent url(http://www.visitbritain.com/build/images/icon-link-external.png?Lo0P=03c5ee0bf77ebef0bc8108f4c58ea198188)  no-repeat 100% 0}
+.textPageHeading{margin-bottom:10px;font-size:3.8em;font-weight:normal}
+.textPageSecondaryHeading{font-size:2.6em;font-weight:normal}
+.textTertiaryHeading{margin-bottom:15px;font-size:2.2em;font-weight:normal}
+.textQuaternaryHeading{font-size:1.2em;font-weight:normal;color:#666}
+.textPersonalisationHeading{font-size:1.8em;font-weight:normal}
+.textLeft{text-align:left}
+.textRight{text-align:right}
+#Container{width:980px;margin:0 auto}
+#Header{margin-bottom:15px;float:left;width:980px}
+#Body{min-height:400px;padding:0 20px}
+#Body.error{padding:50px 10px}
+#Footer{margin-top:15px;clear:both}
+.article-wrap{padding-left:30px;margin-left:-30px;clear:both}
+.grid{margin-bottom:20px}
+.grid:after{content:".";display:block;clear:both;height:0;visibility:hidden}
+.column{float:left;margin-right:20px}
+.column-1{width:60px}
+.column-2{width:140px}
+.column-3{width:220px}
+.column-4{width:300px}
+.column-5{width:380px}
+.column-6{width:460px}
+.column-7{width:540px}
+.column-8{width:620px}
+.column-9{width:700px}
+.column-10{width:780px}
+.column-11{width:860px}
+.column-12{width:940px}
+.column-last{margin-right:0}
+.column-empty{height:1px}
+body.background{background-repeat:no-repeat;background-position:50% 160px}
+body.background-1{background-image: url(http://www.visitbritain.com/build/images/backgrounds/background-1.png?Lo0P=3ab4d70492f4e0d5f4f4861e82b36b1f2256) }
+body.background-2{background-image: url(http://www.visitbritain.com/build/images/backgrounds/background-2.png?Lo0P=0146c0bcb35e1e17c79ca30aeb3800f83069) }
+#HeaderContainer{background:transparent url(http://www.visitbritain.com/build/images/background-masthead.png?Lo0P=924a5b760ffed05ef340cf12f0694eaa3934)  no-repeat left bottom}
+#HeaderContainer .content{padding:0 10px 15px;background:transparent url(http://www.visitbritain.com/build/images/background-masthead-primarynavigation.png?Lo0P=6b80bbb046d6d66c50c01f74b5b0ccc83221)  no-repeat 0 100%}
+#HeaderContainer.secondaryNavigation .content{padding-bottom:0;background:transparent url(http://www.visitbritain.com/build/images/background-masthead-secondarynavigation.png?Lo0P=0e5e62b0536ff5a40ddd2cbce680f82b2008)  no-repeat 0 100%}
+#HeaderContentContainer{padding:20px 50px 9px}
+#HeaderLogo{float:left;padding-top:0}
+#HeaderLogo a:focus{outline:0}
+#HeaderContent{float:right}
+#HeaderLanguageBar{height:1.09em;margin-bottom:15px;padding-right:0;font-family:Arial,Helvetica,sans-serif;font-size:1.1em;text-align:right}
+#HeaderLanguageBar span{color:#666}
+#HeaderLanguageBar span.language{margin-right:2px;padding-right:17px;background:transparent url(http://www.visitbritain.com/build/images/icon-chevrons.png?Lo0P=68290e9d254643420020c43bae840860277)  no-repeat 100% -15px}
+#HeaderLanguageBar a{margin-left:15px;text-transform:capitalize}
+#HeaderContent .standardSearch label{float:right;display:block;margin-right:15px;padding-top:10px;font-family:Arial,sans-serif;font-size:1.4em;font-weight:bold;color:#666;text-transform:uppercase}
+#HeaderContent .standardSearch .standardSearchContainer{float:right}
+#PrimaryNavigation{padding:1px 40px 0 0;font-size:1.3em;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 0;margin-bottom:0}
+#PrimaryNavigation li{float:left;padding-right:1px;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-vertical-grey.png?Lo0P=252c34f652411bdcfb6ee2eeac0dc067126)  repeat-y 100% 0}
+#PrimaryNavigation li a{display:block;height:1em;padding:10px;color:#666}
+#PrimaryNavigation li a:hover{text-decoration:none;background-color:#f4f4f4}
+#PrimaryNavigation li.first a{position:relative;padding-left:50px}
+#PrimaryNavigation li.first a span.bc{position:absolute;bottom:-15px;left:-10px;width:40px;height:40px;background:transparent url(http://www.visitbritain.com/build/images/background-masthead-bl.png?Lo0P=14e5168c26a149788e5637a59df2c528521)  no-repeat 0 0}
+#PrimaryNavigation li.selected a{display:block;height:auto;padding:0;color:#03428d}
+#HeaderContainer.secondaryNavigation #PrimaryNavigation li.selected a{margin-bottom:-1px;border-bottom:1px solid #d9d9d9}
+#PrimaryNavigation li.selected.first a{padding-left:40px}
+#PrimaryNavigation li.selected a strong{display:block;margin-bottom:-1px;padding:10px 10px 11px 10px;background:transparent url(http://www.visitbritain.com/build/images/icon-primarynavigation-indicator.png?Lo0P=451d22fafc3f0d0c2f5e0e871d7daaa9229)  no-repeat 50% 100%}
+#SecondaryNavigationHolder{background:transparent url(http://www.visitbritain.com/build/images/background-secondarynavigation-tertiarynavigation.png?Lo0P=02d37a2599a7d47b03213e467137d32b1318)  no-repeat -2px top}
+#SecondaryNavigation{margin-top:0;padding:0 60px;background:transparent url(http://www.visitbritain.com/build/images/background-secondarynavigation-bottom.png?Lo0P=f7c3dbc1527d0aef4249ffdadc7eb8356208)  no-repeat 0 bottom;background-position:-2px -5px;height:57px}
+#SecondaryNavigation.tertiaryNavigation{background:transparent url(http://www.visitbritain.com/build/images/background-secondarynavigation-tertiarynavigation-bottom.png?Lo0P=bd5582992662deb960c52ac1569d54603498)  no-repeat -2px bottom}
+#SecondaryNavigation li{float:left;margin-right:20px}
+#SecondaryNavigation li a{display:block;min-height:1.273em;padding:13px 0 9px;font-family:Arial,Helvetica,sans-serif;font-size:1.2em;color:#666}
+#SecondaryNavigation li a:hover{color:#03428d;text-decoration:underline}
+#SecondaryNavigation li a:focus{color:#03428d;text-decoration:underline;outline:0}
+#SecondaryNavigation li.selected a{margin-bottom:-6px;padding-bottom:15px;padding-top:15px;padding-bottom:16px;color:#03428d;background:transparent url(http://www.visitbritain.com/build/images/icon-secondarynavigation-indicator-single.png?Lo0P=ffe8dc8164ba0cfb131f0815bdaebb28171)  no-repeat 50% 100%}
+#SecondaryNavigation.tertiaryNavigation li.selected a{margin:0;background:transparent url(http://www.visitbritain.com/build/images/icon-secondarynavigation-indicator.png?Lo0P=9407e68948852d3c214116addd9d29d4203)  no-repeat 50% 100%}
+#SecondaryNavigation li.selected a strong{font-weight:normal}
+#TertiaryNavigation{padding:0 60px 10px;background:transparent url(http://www.visitbritain.com/build/images/background-tertiarynavigation.png?Lo0P=450f20a901f4632a437a812f5ac4cf839906)  no-repeat -2px 100%;margin-top:-10px;float:left;width:880px}
+#TertiaryNavigation li{float:left;width:155px;min-height:1.27em;margin-right:20px;padding:10px 0 0}
+#TertiaryNavigation li a{font-family:Arial,Helvetica,sans-serif;font-size:1.1em;color:#666}
+#TertiaryNavigation li a:hover{color:#03428d;text-decoration:underline}
+#TertiaryNavigation li.selected a{display:inline-block;margin-left:-12px;padding-left:12px;color:#03428d;background:transparent url(http://www.visitbritain.com/build/images/icon-chevrons.png?Lo0P=68290e9d254643420020c43bae840860277)  no-repeat 0 -30px}
+#TertiaryNavigation li.selected a strong{font-weight:normal}
+#Breadcrumbs{position:relative;margin-top:10px;padding:0 20px;width:745px;float:left}
+#Breadcrumbs.search{margin-top:0}
+#HeaderContainer+#Breadcrumbs{margin-top:0}
+#Breadcrumbs ul.breadcrumbsList{font-family:Arial,sans-serif;font-size:1.2em}
+#Breadcrumbs ul.breadcrumbsList li{display:inline;color:#666}
+#Breadcrumbs ul.breadcrumbsList li a{padding-right:10px;font-weight:normal;color:#666;background:transparent url(http://www.visitbritain.com/build/images/icon-breadcrumb-chevron.png?Lo0P=baa240010fac6af44a8432c3682e0fd4166)  no-repeat 100% 4px}
+#Breadcrumbs ul.breadcrumbsList li strong{font-weight:normal}
+#ShareThis,#ShareThisCarousel{position:absolute;top:0;right:20px;padding:2px 3px;border:1px solid #ccc;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;font-family:Arial,sans-serif;font-size:1.1em;background-color:#fff}
+#ShareThis{margin-top:5px;position:relative;float:right}
+#ShareThis a,#ShareThisCarousel a{line-height:1.5;color:#666}
+#HomeIntro{height:165px;overflow:hidden;padding:20px 50px 12px;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 0}
+#HomeIntro .homeIntroContent{background:transparent url(http://www.visitbritain.com/build/images/background-header-home.png?Lo0P=489ba1ae99f6c1ace2e15b5b74f627e72195)  no-repeat 380px 40px}
+#HomeIntro .intro{float:left;width:360px;margin-right:20px}
+#HomeIntro h1{margin-bottom:10px;font-size:2.4em;font-weight:normal;font-style:italic}
+#HomeIntro h1 span{display:block;font-size:2em;font-style:normal}
+#HomeIntro p{font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.2}
+#HomeIntro .carousel{float:right;width:420px}
+#HomeIntro .carousel ul{position:relative;height:165px;margin:0 40px 0 0}
+#HomeIntro .carousel li{float:right;width:65px;overflow:hidden;padding:20px 5px 2px;font-family:Arial,sans-serif;font-size:1.1em;color:#666}
+#HomeIntro .carousel li a.imageLink{display:block;margin-bottom:3px}
+#HomeIntro .carousel li img{width:65px;height:50px;border:2px solid #f1f1f1}
+#HomeIntro .carousel li .detail{position:relative;width:100%}
+#HomeIntro .carousel li h4{height:15px;overflow:hidden;font-weight:normal;white-space:nowrap}
+#HomeIntro .carousel li p{display:none;margin-bottom:5px;font-size:1em;line-height:1}
+#HomeIntro .carousel li a.moreLink{display:none;font-size:1em}
+#FooterContainer{width:880px;height:112px;margin:0 auto;padding:37px 50px 25px;background:transparent url(http://www.visitbritain.com/build/images/background-footer.png?Lo0P=3bad189441c7f684a3c46810a9cf0995805)  no-repeat 0 100%}
+#FooterPartners{float:left;width:495px}
+#FooterPartners h4{margin-bottom:20px;font-size:1.2em;font-weight:normal;font-style:italic;color:#b2b2b2}
+#FooterPartners ul li{float:left;margin-right:15px}
+#FooterLinks{margin-left:495px}
+#FooterLinks.noactionlink{padding-top:43px}
+#FooterLinks .actionLink{margin-bottom:20px}
+#FooterLinks ul{font-family:Arial,Helvetica,sans-serif;font-size:1.1em}
+#FooterLinks ul li{float:left;width:180px}
+#FooterLinks ul li a{line-height:1.3;color:#666}
+#FooterCopyright{height:33px;overflow:hidden;background:#e9e9e9 url(http://www.visitbritain.com/build/images/background-copyright.png?Lo0P=38ee3d3588986085da6adfc11ea76ace116)  repeat-x 0 100%}
+#FooterCopyright div{width:880px;height:1em;margin:0 auto;padding:11px 50px;font-family:Arial,Helvetica,sans-serif;font-size:1.1em;color:#666}
+.module{margin-bottom:20px}
+.standardSearch label{display:none}
+.standardSearchContainer{height:25px;padding:6px 8px 5px 25px;background:transparent url(http://www.visitbritain.com/build/images/background-standardsearch.png?Lo0P=fa7d5e3965c2c2c569f779c5e6c984ee702)  no-repeat 0 0}
+.standardSearchField{float:left;width:230px;height:15px;margin-right:4px;padding:4px 10px}
+.standardSearchField:focus{outline:0}
+.standardSearchFieldDefault{color:#ccc}
+.standardSearchButton{float:left;width:23px;height:23px;overflow:hidden;text-indent:-1000px;background:#fff url(http://www.visitbritain.com/build/images/icon-action-submit.png?Lo0P=d7a23cef8bf0bd0ba988e456807c2b6b510)  no-repeat 0 0;cursor:pointer}
+input.standardSearchButton:hover{background-position:100% -23px}
+#LocaleSelector{margin-top:20px}
+#LocaleSelector .languageList{font-family:Arial,sans-serif;font-size:1.1em}
+#LocaleSelector .languageList li{float:left;width:125px;margin:0 10px;padding:5px 0}
+#LocaleSelector .languageList li a{color:#666}
+#LocaleSelector .languageList li a:hover{color:#0077d8}
+#LocaleSelector .languageList li a:focus{outline:1px dotted #000}
+#LocaleSelector .languageList li a.selected{padding-right:15px;color:#0077d8;background:transparent url(http://www.visitbritain.com/build/images/ico-collapseexpand.png?Lo0P=75fd23c62acfe47bd1a46b2b458a46a6227)  no-repeat 100% -13px}
+#LocaleSelector .row .countryListInnerContainer{padding:5px 0;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 4px}
+#LocaleSelector .row .countryListContent{height:1%;min-height:29px;padding:10px 10px 0 10px;font-family:Arial,sans-serif;font-size:1.1em;background:#f2f2f2 url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 100%}
+#LocaleSelector .row .countryListContent strong{float:left;width:124px;padding:5px 20px 0 0;font-weight:normal;color:#666}
+#LocaleSelector .row .countryListContent ul{float:left;width:285px;margin:0 -20px 0 0}
+#LocaleSelector .row .countryListContent li{float:left;width:122px;margin-right:20px;padding-bottom:10px}
+#LocaleSelector .row .countryListContent li a{float:left;color:#666}
+#LocaleSelector .row .countryListContent li a:hover{color:#0077d8}
+#LocaleSelector .row .countryListContent li a:focus{outline:1px dotted #000}
+#LocaleSelector .row .countryListContent li img{float:left;width:26px;height:19px;margin-right:7px}
+#LocaleSelector .row .countryListContent li span{float:left;padding-top:5px}
+#LocaleSelector .row .countryListContent li span:hover{text-decoration:underline}
+.moduleCarousel{position:relative;height:370px;margin-left:-10px;margin-right:-15px}
+#HTMLCarousel{position:relative}
+#CarouselImage{padding-left:10px;width:940px;height:370px;overflow:hidden}
+.moduleCarousel-medium #CarouselImage{width:620px}
+#CarouselInfo{position:absolute;bottom:15px;left:30px;right:35px;z-index:5;padding:15px 200px 15px 45px;color:#fff;background:rgba(0,0,0,0.7) none}
+#CarouselInfo h3{min-height:1em;margin-bottom:10px;font-family:Georgia;font-size:2.6em;font-weight:normal}
+#CarouselInfo h4{min-height:1em;margin-bottom:10px;font-family:Georgia;font-size:1.2em;font-weight:normal}
+#CarouselInfo p{min-height:1em;font-family:Helvetica;font-size:1.1em;line-height:1.2}
+#CarouselInfo .links{margin-top:10px;font-family:Georgia;font-size:1.1em}
+#CarouselInfo .map{position:absolute;right:30px;top:-60px;width:164px;height:181px;background:transparent url(http://www.visitbritain.com/build/images/image-map-uk-mini.png?Lo0P=5f44b39645e5cbb4f4a3b38ba5c6c3279565)  no-repeat 0 0}
+#CarouselInfo .map .pin{position:absolute;top:0;left:0;width:26px;height:40px;background:transparent url(http://www.visitbritain.com/build/images/icon-map-pin-mini.png?Lo0P=c0344023556c318f590bd4a1c0e2ceeb898)  no-repeat 0 0}
+#CarouselInfo a{margin-right:10px;color:#00baf1}
+#CarouselPhotographerInfo{position:absolute;top:15px;left:30px;z-index:5;padding:5px;color:#fff;background:rgba(0,0,0,0.7) none}
+#CarouselPhotographerInfo h4,#CarouselPhotographerInfo h4 a{color:#FFF}
+#CarouselNavigation a{position:absolute;top:78%;z-index:6;width:68px;height:67px;overflow:hidden;margin-top:-38px;text-indent:-1000px;background:transparent url(http://www.visitbritain.com/build/images/icons-carousel-navigation.png?Lo0P=b48683a5ebf59afe6864c26c37ac26573356)  no-repeat 0 0}
+#CarouselNavigation a.previous{left:-7px}
+#CarouselNavigation a.next{right:-7px;background-position:0 -67px}
+#CarouselPagination{position:absolute;top:15px;left:15px;right:15px;z-index:6;height:8px}
+#CarouselPagination a{float:left;width:8px;height:8px;margin-right:5px;background:transparent url(http://www.visitbritain.com/build/images/icons-carousel-pagination.png?Lo0P=749f39e17441c23b860f5c3a1f54674d266)  no-repeat 0 -8px}
+#CarouselPagination a.current{background-position:0 0}
+#FlashCarousel{position:absolute;top:0;left:0;z-index:10}
+#FlashCarousel:focus{outline:0}
+.moduleCarousel #ShareThisCarousel{position:absolute;top:0;left:0;right:auto;z-index:11;display:none}
+.moduleCarousel #CarouselBingMap{position:absolute;z-index:10000;background:#f4f6f4 url(http://www.visitbritain.com/build/images/icon-loader-large.gif?Lo0P=102f802d4d08e63c994331f1988f782211474)  no-repeat 50% 50%}
+.moduleLandingIntroduction{padding-top:50px;background:#fff url(http://www.visitbritain.com/build/images/image_landingheading_top.png?Lo0P=bbea5ce228b878899a308f497ac7c24b2370)  no-repeat 0 0}
+.moduleLandingIntroduction h1{margin-bottom:45px;margin-top:-10px;padding-bottom:17px;font-size:3.4em;font-weight:normal;background:#fff url(http://www.visitbritain.com/build/images/image_landingheading_bar.png?Lo0P=c245e05f886923fa775c1ee60f91dc1b230)  no-repeat 0 100%}
+.moduleLandingIntroduction p{font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.4}
+.moduleLandingIntroduction p.leadIn{margin-bottom:17px;font-family:Georgia,serif;font-size:1.8em;color:#000;line-height:1.2}
+.eventHeader p.leadIn{margin-bottom:17px;margin-top:7px;font-family:Georgia,serif;font-size:1.8em;color:#000;line-height:1.2}
+.eventCategoryHeader p.leadIn{margin-bottom:17px;margin-top:7px;font-family:Georgia,serif;font-size:1.8em;color:#000;line-height:1.2}
+.moduleLandingIntroduction p.leadIn strong{font-weight:normal}
+.moduleDetailIntroduction p{font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.4}
+.moduleDetailIntroduction p.leadIn{margin-bottom:20px;font-family:Georgia,serif;font-size:1.8em;color:#000;line-height:1.2}
+.moduleDetailIntroduction p.leadIn strong{font-weight:normal}
+h1.leadIn{background:#fff url(http://www.visitbritain.com/build/images/image_landingheading_bar.png?Lo0P=c245e05f886923fa775c1ee60f91dc1b230)  no-repeat 2px 100%;padding-bottom:15px;color:#03428d}
+.moduleArticle{margin-top:-15px;font-family:Arial,sans-serif;font-size:1.25em;color:#000;line-height:1.2}
+.moduleArticle h3{clear:both;margin-bottom:3px;padding-top:5px;font-size:1.6em;font-weight:normal;font-family:Georgia,serif;color:#03428d}
+.moduleArticle img{float:left;width:167px;height:131px;margin:2px 12px 15px 0}
+.moduleArticle p{font-family:Arial,sans-serif;font-size:1em;color:#000;line-height:1.25;margin:3px 0 15px 0}
+.moduleArticle ul,.moduleArticle ol{margin-bottom:15px;font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.4}
+.moduleArticle ul li{padding-left:15px;list-style:square inside none}
+.moduleArticle ol li{padding-left:15px;list-style:decimal inside none}
+.heroArticle{position:relative}
+.heroArticle .tetris{background: url(http://www.visitbritain.com/build/images/bg-tetris.png?Lo0P=da8fdb86e0f9bd3e84a20236349d5afc970)  no-repeat left top;padding:5px;position:absolute;bottom:20px}
+.heroArticle .tetris p{margin:0;padding:0;color:#f1f1f1}
+.heroArticle h3{clear:both;color:#f1f1f1;font-family:Georgia,serif;font-size:2em;font-weight:normal;margin-bottom:3px;padding-top:5px;margin-top:0}
+.heroArticle a .credit{color:#0077d8;font-size:1.05em}
+.moduleArticle .moduleArticleflickrImgDiv{float:left}
+.moduleArticle .moduleArticleflickrImgDiv img{margin-bottom:5px}
+.moduleArticle .moduleArticleflickrImgDiv .moduleArticleBtmTxt{clear:both;color:#0077d8;float:left;font-size:1em;font-weight:normal;margin-bottom:5px;text-align:right;width:167px}
+.moduleMediaTicker{position:relative}
+.moduleMediaTicker a.imageLink{float:left}
+.moduleMediaTicker a.imageLink img{width:300px;height:225px}
+.moduleMediaTicker ul{margin-left:300px;font-family:Arial,sans-serif;background:#f2f2f2 url(http://www.visitbritain.com/build/images/background-mediaticker-selected.png?Lo0P=15e6dabaa41c99af42d39d755467552a121)  repeat-x 0 0}
+.moduleMediaTicker ul li{height:48px;overflow:hidden;padding:13px 20px;border-top:1px solid #fff}
+.moduleMediaTicker ul li.first{height:49px;border-top:0}
+.moduleMediaTicker ul li h3{margin-bottom:4px;font-size:1.4em;text-transform:uppercase}
+.moduleMediaTicker ul li h3 a{color:#808080}
+.moduleMediaTicker ul li.selected h3 a{color:#fff}
+.moduleMediaTicker ul li p{font-size:1.2em;line-height:1.2}
+.moduleMediaTicker ul li p a{color:#4d4d4d}
+.moduleMediaTicker ul li.first p a{color:#fff}
+.moduleMap{position:relative;margin:0 -12px 0 -14px;padding:20px 32px 56px 14px;background:#fff url(http://www.visitbritain.com/build/images/background-maps.png?Lo0P=ee0bc557f47c426e5a32d93c18be53e71729)  no-repeat 0 0}
+.moduleMap-solo{padding-bottom:16px}
+.moduleMap-medium .map{width:600px;height:310px;background-color:#f4f6f4}
+.moduleMap-solo .map{height:350px}
+.moduleMap-medium .map-loading{background:#f4f6f4 url(http://www.visitbritain.com/build/images/icon-loader-large.gif?Lo0P=102f802d4d08e63c994331f1988f782211474)  no-repeat 50% 50%}
+.moduleMap .overlay{position:absolute;bottom:18px;left:14px;width:600px}
+.moduleMap .overlay .overlayContent{position:absolute;bottom:0;left:0;padding:0 10px}
+.moduleMap .overlay .overlayContent label{float:left;padding:8px 15px 0 0;font-family:Arial,sans-serif;font-size:1.1em;font-weight:bold;color:#666;text-transform:uppercase}
+.moduleMap .destinationSearchContainer{float:left;height:21px;padding:3px 8px 2px 25px;background:transparent url(http://www.visitbritain.com/build/images/backgound-destinationsearch.png?Lo0P=63f6ef8a1898fef33797b3594e95f198417)  no-repeat 0 0}
+.moduleMap .destinationSearchField{float:left;width:190px;height:15px;margin-right:4px;padding:2px 5px 2px 0}
+.moduleMap .destinationSearchField:focus{outline:0}
+.moduleMap .destinationSearchFieldDefault{color:#ccc}
+.moduleMap input.destinationSearchButton:hover{background-position:100% -23px}
+.moduleMap .key{position:absolute;bottom:56px;right:52px;width:150px;font-family:Arial,sans-serif;font-size:1.1em;color:#fff;z-index:50}
+.moduleMap-solo .key{bottom:16px}
+.moduleMap .key .keyHeader{height:0;overflow:hidden;padding-right:10px;background:transparent url(http://www.visitbritain.com/build/images/background-map-key-heading.png?Lo0P=34e8b8d7e92efa7080c0b7bad95d3c3d299)  no-repeat 100% 0}
+.moduleMap .key .keyHeader a{float:right;padding:5px 5px 5px 15px;color:#fff;background:transparent url(http://www.visitbritain.com/build/images/background-map-key-heading.png?Lo0P=34e8b8d7e92efa7080c0b7bad95d3c3d299)  no-repeat 0 -22px}
+.moduleMap .key .keyHeader a:focus{outline:0}
+.moduleMap .key .keyHeader a:hover{text-decoration:none}
+.moduleMap .key .keyHeader a span{padding:5px 15px 5px 0;background:transparent url(http://www.visitbritain.com/build/images/icons-hideshow-map.png?Lo0P=0998147acfd9c30b0984294e5b727c0e238)  no-repeat 100% 8px}
+.moduleMap .key .keyHeader a span.loading{padding-right:0;background:transparent none no-repeat 100% 5px}
+.moduleMap .key .keyHeader a span.open{background-position:100% 8px}
+.moduleMap .key .keyHeader a span.closed{background-position:100% -7px}
+.moduleMap .key .keyContent{overflow:hidden;background:transparent url(http://www.visitbritain.com/build/images/background-map-key-content.png?Lo0P=b746c18b3d96dd335792fe5a1f9628e5369)  no-repeat 0 0}
+.moduleMap .key .keyContent .checkbox{padding:10px 10px 0 10px}
+.moduleMap .key .keyContent .checkbox a{padding:1px 0 2px 25px;color:#fff;background:transparent url(http://www.visitbritain.com/build/images/icons-checkboxradios.png?Lo0P=92e2a637d3eb69f929554a81796b5059769)  no-repeat 0 -20px}
+.moduleMap .key .keyContent .checkbox a:hover{text-decoration:none}
+.moduleMap .key .keyContent .checkbox a:focus{outline:0}
+.moduleMap .key .keyContent a.checked{background-position:0 0}
+.moduleMap .key .keyContent .keyContentDivider{padding-bottom:10px;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 100%}
+.moduleMap .key .keyContent ul{padding:10px 10px 5px}
+.moduleMap .key .keyContent li{min-height:17px;padding:3px 0 5px 25px;background-repeat:no-repeat;background-position:0 0}
+.moduleMap .key .keyContent li.cities{background-image: url(http://www.visitbritain.com/build/images/pins/pin-05.png?Lo0P=5fb7ddcf5a0ac9b3dcb97c8489c640c9459) }
+.moduleMap .key .keyContent li.historyheritage{background-image: url(http://www.visitbritain.com/build/images/pins/pin-06.png?Lo0P=c2c15e0be0390b8dc22b3d9e576f3d46459) }
+.moduleMap .key .keyContent li.nationalparks{background-image: url(http://www.visitbritain.com/build/images/pins/pin-04.png?Lo0P=2b98bf142e9e11b175e2c210f1a23461459) }
+.moduleMap .key .keyContent li.beaches{background-image: url(http://www.visitbritain.com/build/images/pins/pin-03.png?Lo0P=4a3e5308157780d55528a2dd9f7308e7466) }
+.moduleMap .key .keyContent li.itineraries{background-image: url(http://www.visitbritain.com/build/images/pins/pin-02.png?Lo0P=243d2a0fc01b4cdf20544ba23a89460d459) }
+.moduleMap .key .keyContent li.pointofinterest{background-image: url(http://www.visitbritain.com/build/images/pins/pin-11.png?Lo0P=1a36dcb823e99d701691b875bb8279cc466) }
+.moduleMap .key .keyContent li.accommodation{background-image: url(http://www.visitbritain.com/build/images/pins/pin-08.png?Lo0P=6718724d713de0c70662ad618557bc86459) }
+.moduleMap .key .keyContent li.attractions{background-image: url(http://www.visitbritain.com/build/images/pins/pin-09.png?Lo0P=8190a6cbb905362900ff9ded4ce35844459) }
+.moduleMap .key .keyContent li.events{background-image: url(http://www.visitbritain.com/build/images/pins/pin-07.png?Lo0P=734f17c220d4d7b40e9aeb034f3b9319462) }
+.moduleMap .paperclip{position:absolute;top:-2px;left:-2px;z-index:100;width:42px;height:59px;background:transparent url(http://www.visitbritain.com/build/images/icon-paperclip-map.png?Lo0P=83bbb282c67681edf9172f211ce42b3b1702)  no-repeat 0 0}
+.moduleFactSheet{position:relative;margin:0 -7px 0 -6px;padding:31px 17px 23px 13px;background:#fff url(http://www.visitbritain.com/build/images/background-factsheet.png?Lo0P=fd93cf77a7c9e52aaded30d31742d720994)  no-repeat 0 0}
+.moduleFactSheetVertical{height:auto;margin:0 -6px;padding:0;background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-vertical-repeater.png?Lo0P=ce935776af3457769c82b12398a8eaad164)  repeat-y 0 0!important}
+.moduleFactSheet img.image{width:322px;height:350px}
+.moduleFactSheet .content{position:absolute;top:0;right:5px;width:194px;padding:44px 60px 30px 60px;background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-content.png?Lo0P=1c0ca1da4868a53554c101ab0042102f12829)  no-repeat 0 0}
+.moduleFactSheetVertical .content{position:static;top:auto;right:auto;width:auto;padding:40px 0 0 0;background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-vertical.png?Lo0P=75c66bd0e6bffab832d245a6925aa1384309)  no-repeat 0 0}
+.moduleFactSheetVertical.largeFactSheet .content{position:static;top:auto;right:auto;width:auto;padding:40px 0 0 0;background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-vertical_withlogo.png?Lo0P=86aa69c4ecac7314adbaacae85f6d6185467)  no-repeat 0 0!important}
+.moduleFactSheetVertical h2{padding-left:55px}
+.moduleFactSheet h2{margin-bottom:20px;font-family:Arial,sans-serif;font-size:2.4em;color:#004090;text-transform:uppercase;line-height:.8}
+.moduleFactSheet h2 span{display:block;color:#ff0017}
+.moduleFactSheet dl{height:267px;overflow:hidden}
+.moduleFactSheetVertical dl{height:auto;min-height:210px;padding:0 55px 30px 55px;overflow:hidden;background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-vertical.png?Lo0P=75c66bd0e6bffab832d245a6925aa1384309)  no-repeat -312px 100%}
+.largeFactSheet dl{background:transparent url(http://www.visitbritain.com/build/images/background-factsheet-vertical_withlogo.png?Lo0P=86aa69c4ecac7314adbaacae85f6d6185467)  no-repeat -312px 100%!important;padding-bottom:45px}
+.moduleFactSheet dt{margin-bottom:2px;font-size:1.2em;font-weight:bold;font-style:italic}
+.moduleFactSheet dt:before{content:'- '}
+.moduleFactSheet dd{padding-bottom:15px;padding-left:8px;font-family:Arial,sans-serif;font-size:1.2em}
+.moduleResultsHeader{margin-bottom:-20px}
+.moduleResultsHeader h2{margin-bottom:10px;font-size:1.6em;font-weight:normal}
+.moduleResultsHeader .headingInfo{margin-bottom:20px;font-size:1.8em;font-style:italic}
+.moduleResultsHeader .headingSuggestions{margin-bottom:20px;font-family:Arial,sans-serif;font-size:1.4em;color:#666}
+.moduleResultsInfo h2{font-size:1.6em;font-weight:normal}
+.modulePaginationHeader{margin-bottom:10px}
+.modulePaginationHeader .content{position:relative;margin-bottom:3px;padding:20px 10px 12px 10px;text-align:center;background:#fafafa url(http://www.visitbritain.com/build/images/background-resultsheader.png?Lo0P=8dc232457403b61891198d55398647fa229)  no-repeat 50% 100%}
+.modulePaginationHeaderEmpty .content{background-image:none}
+.modulePaginationHeader .standardSearch{display:inline-block}
+.modulePaginationHeader .modulePagination{margin:0;padding-top:5px;background-image:none}
+.modulePaginationHeader .modulePagination .content{padding:0;background-image:none}
+.modulePaginationHeader .content .corner{position:absolute;top:0;width:8px;height:8px;background-image: url(http://www.visitbritain.com/build/images/background-paginationsearchbar.png?Lo0P=fb66d8daa1c990994d37c1fde9d8cb2a201) ;background-repeat:no-repeat}
+.modulePaginationHeader .content .corner-tl{left:0;background-position:0 0}
+.modulePaginationHeader .content .corner-tr{right:0;background-position:100% 0}
+.modulePaginationHeader .detail{padding:0 10px;font-family:Arial,sans-serif;font-size:1.2em;color:#666;width:440px}
+.modulePaginationHeader .resultInfo{float:left}
+.modulePaginationHeader .resultsPerPage{float:right}
+.modulePaginationHeader .resultsPerPage a,.modulePaginationHeader .resultsPerPage span{padding:0 0 0 10px;font-family:Georgia,serif;font-size:1.17em;line-height:.79}
+.modulePagination{padding-top:12px;text-align:center;background:#fafafa url(http://www.visitbritain.com/build/images/background-pagination.png?Lo0P=0b9058b0420d42d1add10861912cdcfa229)  no-repeat 50% 0}
+.modulePagination .content{padding:0 10px 10px 10px;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 100%}
+.modulePagination .endLinks{width:auto;padding-top:3px;font-size:1.2em}
+.modulePagination .previous{float:left;text-align:left}
+.modulePagination .next{float:right;text-align:right}
+.modulePagination .endLinks a{color:#666}
+.modulePagination ul{display:inline-block;font-size:1.4em}
+.modulePagination ul li{display:inline}
+.modulePagination ul li a,.modulePagination ul li strong{padding:0 5px}
+.moduleGiantTeaser h2{margin-bottom:15px;font-size:2.4em;font-weight:normal}
+.moduleGiantTeaser h2 a{color:#000}
+.moduleGiantTeaser .imageContainer{position:relative}
+.moduleGiantTeaser .image{display:block;height:380px;overflow:hidden;margin-bottom:15px}
+.moduleGiantTeaser .caption{position:absolute;top:20px;right:0;padding:3px 10px 3px 15px;font-family:Arial,sans-serif;font-size:1.1em;color:#4d4d4d;text-align:right;background:transparent url(http://www.visitbritain.com/build/images/background-teaser-attribution.png?Lo0P=2820789cdefb0939e28aaf9b9f34ca94229)  no-repeat 0 0}
+.moduleGiantTeaser p{font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.2;margin-top:20px}
+.moduleGiantTeaser p a{font-size:1em}
+.moduleGiantTeaser .imageContainer .GiantTeaserBtmTxt{position:absolute;top:385px;right:0;color:#0077d8;font-family:Arial,sans-serif;font-size:1.2em}
+.moduleLargeTeaser img.teaserImage{float:left;width:300px;height:225px;margin-right:20px}
+.moduleLargeTeaser .teaserContent{margin-left:320px;padding-top:20px;border-top:8px solid #03428d}
+.moduleLargeTeaserGreen .teaserContent{border-top-color:#bdd421}
+.moduleLargeTeaserPurple .teaserContent{border-top-color:#934899}
+.moduleLargeTeaser h2{margin-bottom:15px;font-size:2.4em;font-weight:normal}
+.moduleLargeTeaser h2 a{color:#000}
+.tCont,.moduleLargeTeaser p{margin-bottom:10px;font-family:Arial;font-size:1.2em;color:#666;line-height:1.2}
+.moduleLargeTeaser .teaserLink{margin-top:5px}
+.LargeTeaserflickrImgDiv{position:relative;float:left}
+.LargeTeaserflickrImgDiv .LargeTeaserBtmTxt span{position:absolute;right:20px;bottom:-15px;color:#666;font-size:1.091em;font:normal 11px Arial,sans-serif}
+.LargeTeaserflickrImgDiv .LargeTeaserBtmTxt span:hover{color:#000}
+.moduleSmallTeaser .featuredTeaser{max-width:300px}
+.moduleSmallTeaserWideNoHeader{padding-top:24px}
+.moduleSmallTeaser h3{margin:-4px 0 7px;font-family:Arial;font-size:1.2em;color:#fff;text-transform:uppercase}
+.moduleSmallTeaser h3 span{padding:1px 4px;background-color:#0077d8;line-height:2}
+.eventHeadline h3{margin:-4px 0 0;font-family:Arial;font-size:1.2em;color:#fff;text-transform:uppercase}
+.eventHeadline h3 span{padding:1px 4px;background-color:#0077d8;line-height:2}
+.moduleSmallTeaser img.teaserImage{float:left;width:140px;height:105px;margin:0 20px 45px 0}
+.moduleSmallTeaserWide .teaserContent{margin-left:160px}
+.moduleSmallTeaser h4{margin-bottom:8px;font-size:1.6em;font-weight:normal}
+.moduleSmallTeaser h4 a{color:#000}
+.moduleSmallTeaser p{font-family:Arial;font-size:1.1em;color:#666;line-height:1.2;margin-bottom:10px}
+.moduleSmallTeaser .teaserLink{margin-top:5px}
+.moduleSmallTeaser .moreLink{font-size:1.1em}
+.SmallTeaserflickrImgDiv{position:relative}
+.SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span{position:absolute;right:0;bottom:-120px;color:#0077d8;font-size:1.091em;font-weight:bold}
+.moduleSmallTeaserWide .SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span{position:absolute;right:160px;bottom:-120px;color:#0077d8;font-size:1.091em;font-weight:bold}
+.SmallTeaserflickrImgDiv{position:relative}
+.SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span{color:#666;font-size:1.091em;position:absolute;right:0;text-align:right;top:110px;vertical-align:top;font:normal 11px Arial,sans-serif}
+.SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span:hover{color:#000}
+.moduleSmallTeaserWide .SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span{position:absolute;right:160px;bottom:-120px;color:#666;font-size:1.091em;font:normal 11px Arial,sans-serif}
+.moduleSmallTeaserWide .SmallTeaserflickrImgDiv .SmallTeaserBtmTxt span:hover{color:#000}
+.featuredCampaign .moduleSmallTeaser .moreLink{padding-bottom:15px;display:inline-block}
+.featuredCampaign .moduleSmallTeaser .teaserLink,.featuredCampaign .moduleSmallTeaser p{margin:0;padding-bottom:10px}
+.ModuleSideBoxA_Content .moduleSmallTeaser .featuredContainer{position:relative}
+.featuredCampaign .moduleSmallTeaser .featuredContainer div{position:absolute;right:10px;bottom:15px;width:130px;height:38px;display:block}
+.featuredCampaign .moduleSmallTeaser .featuredContainer div img{margin:0;max-height:38px;float:right}
+.featuredCampaign .moduleSmallTeaser .textTertiaryHeading{font-size:2.2em;margin:0 0 10px;padding:10px 0 0}
+.ModuleSideBoxA_Content .SideBoxA_ContentImgDiv{position:relative;margin-bottom:10px}
+.ModuleSideBoxA_Content .SideBoxA_ContentBtmTxt{position:absolute;right:0;bottom:-10px;color:#0077d8;font-size:1.091em;font-weight:bold}
+.ModuleCampaign{min-height:330px;position:relative}
+.ModuleCampaign .ModuleCampaignContentWrapper{height:260px;position:relative;margin-bottom:30px}
+.ModuleCampaign .ModuleCampaignContentWrapper.last{margin-bottom:0}
+.ModuleCampaign .ModuleCampaignContentWrapper .column{width:620px;overflow:hidden;height:260px;background-repeat:no-repeat}
+.ModuleCampaign .InnerBox{position:absolute;top:20px;left:250px;width:351px}
+.ModuleCampaign .InnerBox .ModuleCampaignInnerBox_Top{width:351px;height:10px;background: url(http://www.visitbritain.com/build/images/background-campaigns-innerbox_top.png?Lo0P=03e8dd154732a07db11d48f13c822aa7212)  no-repeat}
+.ModuleCampaign .InnerBox .ModuleCampaignInnerBox_Content{width:351px;height:200px;background: url(http://www.visitbritain.com/build/images/background-campaigns-innerbox_content.png?Lo0P=7741cfcdc1a0edcee1403232eaa8255b121)  repeat-y}
+.ModuleCampaign .InnerBox .ModuleCampaignInnerBox_Bottom{width:351px;height:10px;background: url(http://www.visitbritain.com/build/images/background-campaigns-innerbox_bottom.png?Lo0P=9149ce3166b54763ec0470113786f4c4212)  no-repeat}
+.ModuleCampaign .ModuleCampaignContent{padding:5px 10px 10px 15px}
+.ModuleCampaign .ModuleCampaignContent h2{font-size:2.4em;font-weight:normal;padding-bottom:5px}
+.ModuleCampaign .ModuleCampaignContent h4{font-weight:normal;font-size:1.4em;padding-bottom:15px}
+.ModuleCampaign .ModuleCampaignContent p{font-family:Arial,Helvetica,sans-serif;font-size:1.1em;color:#666}
+.ModuleCampaign .ModuleCampaignContent .teaserLink{margin-top:5px}
+.ModuleCampaign .ModuleCampaignContent .teaserLink .moreLink,.moduleLargeTeaser .moreLink{font-size:1.1em}
+.ModuleCampaign .ModuleCampaignContentWrapper .CampaignContentBtmTxt{position:absolute;bottom:-13px;right:0;color:#0077d8;font-size:1.091em;font-weight:bold}
+.moduleCircularTeaser{width:300px;height:300px;color:#fff;text-align:center;background-color:transparent;background-position:0 0;background-repeat:no-repeat}
+.moduleCircularTeaser-green{background-image: url(http://www.visitbritain.com/build/images/background-teaser-circular-green.png?Lo0P=536069884003151eb7e2d7a50c42d8c814092) }
+.moduleCircularTeaser-purple{background-image: url(http://www.visitbritain.com/build/images/background-teaser-circular-purple.png?Lo0P=a1196b1fbf0027cf53a91b3834f50f6710154) }
+.moduleCircularTeaser-blue{background-image: url(http://www.visitbritain.com/build/images/background-teaser-circular-blue.png?Lo0P=839157fb2ea2a3a234a6cf2f97a6cd998905) }
+.moduleCircularTeaser .teaserContent{display:table-cell;width:300px;height:300px;vertical-align:middle}
+.moduleCircularTeaser h4{padding:0 10px;font-size:4.8em;font-weight:normal;font-style:italic;line-height:1.2;margin:0;padding:0;width:250px;margin-left:17px}
+.moduleCircularTeaser h4{smargin-top:30px}
+.moduleCircularTeaser p{smargin-top:-40px}
+.moduleCircularTeaser p{padding:0 10px;font-size:1.8em;line-height:1.2}
+.moduleCircularTeaser a{color:#fff}
+.modulePersonalisationTeaser .teaserImageContainer{margin:-8px -10px 5px -8px;padding:12px 11px;background:transparent url(http://www.visitbritain.com/build/images/background-personalisedteaserimage.png?Lo0P=8a8e3d31ed710e8677b52fc93acd3c811558)  no-repeat 0 0}
+.modulePersonalisationTeaser .teaserImageContainer img{width:132px;height:98px}
+.modulePersonalisationTeaser p{margin-bottom:10px;font-size:1.4em;line-height:1.2}
+.modulePersonalisationTeaser p a{color:#000}
+.PersonalisationTeaserBtmTxt{float:right}
+.PersonalisationTeaserBtmTxt span{color:#0077d8;font-size:1.091em;font-weight:bold;clear:right}
+.moduleHomepageTeaser{position:relative;margin-top:0}
+.moduleHomepageTeaser img{float:right;margin-top:-10px}
+.moduleHomepageTeaser .popup{padding-bottom:40px;background:transparent url(http://www.visitbritain.com/build/images/background-homepageteaser-popup.png?Lo0P=551d91b4ed62d169baf741d5e3dd3b692302)  no-repeat -206px 100%}
+.moduleHomepageTeaser .popup .content{width:154px;padding:29px 28px 0 23px;font-family:Arial,sans-serif;font-size:1.1em;color:#666;line-height:1.2;background:transparent url(http://www.visitbritain.com/build/images/background-homepageteaser-popup.png?Lo0P=551d91b4ed62d169baf741d5e3dd3b692302)  no-repeat 0 0}
+.moduleFooterTeaser{position:relative;min-height:152px;margin:40px 0 -33px}
+.moduleFooterTeaser .teaserContent{padding:15px 0}
+.moduleFooterTeaser div.question{padding:0 0 10px 195px;font-size:2.2em;font-style:italic;line-height:1.2}
+.moduleFooterTeaser div.question a{color:#000}
+.moduleFooterTeaser div.question strong{font-weight:normal}
+.moduleFooterTeaser div.answer{padding-left:195px;font-size:1.4em;font-style:italic;color:#4c4c4c;line-height:1.6;background:#fff url(http://www.visitbritain.com/build/images/background-teaser-footer.png?Lo0P=9c27516f95fcc2a28ef0a9cb02de113e129)  repeat-x 0 0}
+.moduleFooterTeaser div.answer a{color:#4c4c4c}
+.moduleFooterTeaser img.teaserImage{position:absolute;bottom:0;left:0}
+.moduleOffer{position:relative;height:105px;padding:25px;background:transparent url(http://www.visitbritain.com/build/images/background-offers.png?Lo0P=ac8634687263fe561c11be614b757348515)  no-repeat 100% 0}
+.moduleOffer .offerDetails{font-family:Arial,sans-serif;font-size:1.8em;font-weight:bold;color:#039;text-transform:uppercase}
+.moduleOffer .offerDetails span{display:block;color:#e3001d}
+.moduleOffer .offerReference{position:absolute;bottom:25px;left:25px;font-size:1.2em}
+.moduleOffer .actionButton{position:absolute;bottom:25px;right:25px}
+.moduleShop{position:relative;padding:0;overflow:hidden;border-top:8px solid #03428d}
+.moduleShop .moduleShopHeading{min-height:90px;padding:0 50px 0 20px;background:transparent url(http://www.visitbritain.com/build/images/background-shop.png?Lo0P=b08aac56cfdb5b192ae5f1535c64a450738)  no-repeat 100% 0}
+.moduleShop .moduleShopHeading h4{padding-bottom:5px;font-family:Arial,sans-serif;font-size:2.4em;text-transform:uppercase;line-height:.8;margin:20px 0 15px}
+.moduleShop .moduleShopHeading h4 a{color:#004090}
+.moduleShop .moduleShopHeading h4 a span{display:block;color:#ff0017}
+.moduleShop .moduleShopHeading h4 a:hover span{text-decoration:underline}
+.moduleShop .moduleShopHeading p{margin:7px 0 0 0;padding:0;font-family:Arial,sans-serif;font-size:1.2em}
+.moduleShop .moduleShopHeading p strong{font-family:Georgia,serif;font-size:1.2em;font-weight:bold;font-style:italic}
+.moduleShop .shopItem{position:relative;height:190px;margin-top:20px;background:transparent url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x 0 100%}
+.moduleShop h5{margin-bottom:10px;padding:0 20px;font-size:2em;font-weight:normal}
+.moduleShop img.productImage{position:absolute;bottom:0;left:0}
+.moduleShop p{margin-bottom:10px;padding:0 20px;font-family:Arial,sans-serif;font-size:1.2em;line-height:1.2;color:#666}
+.moduleShop .price{position:absolute;bottom:50px;left:50px;height:62px;font-size:2em;background:transparent url(http://www.visitbritain.com/build/images/background-shop-price.png?Lo0P=b624d018545922783869082edf23f5031788)  no-repeat 50% 0}
+.moduleShop .price .price-bg-left{display:block;margin-left:-20px;padding-left:20px;background:transparent url(http://www.visitbritain.com/build/images/background-shop-price.png?Lo0P=b624d018545922783869082edf23f5031788)  no-repeat 0 -62px}
+.moduleShop .price .price-bg-right{display:block;margin-right:-20px;padding:12px 20px 20px 0;background:transparent url(http://www.visitbritain.com/build/images/background-shop-price.png?Lo0P=b624d018545922783869082edf23f5031788)  no-repeat 100% -124px}
+.moduleShop .actionButton{position:absolute;bottom:35px;right:0}
+.moduleShop .moreLink{position:absolute;bottom:10px;right:0;z-index:1}
+.moduleReviewHighlight{margin:0;font-family:Arial,sans-serif;position:relative;width:345px}
+.column-sidebar .moduleReviewHighlight{margin:20px 0}
+.moduleReviewHighlight .outer{width:312px;height:48px;background:transparent url(http://www.visitbritain.com/build/images/background-highlights.png?Lo0P=3e514c2ea3ab4bbc48c5e2c8c8a6166b7293)  no-repeat 0 0}
+.moduleReviewHighlight .inner{margin-bottom:0;padding:0 50px 0 28px;background:transparent url(http://www.visitbritain.com/build/images/background-highlights.png?Lo0P=3e514c2ea3ab4bbc48c5e2c8c8a6166b7293)  repeat-y -696px 0}
+.moduleReviewHighlight .ModuleSideBoxC_Bottom{height:90px;padding:0;background:transparent url(http://www.visitbritain.com/build/images/background-highlights.png?Lo0P=3e514c2ea3ab4bbc48c5e2c8c8a6166b7293)  no-repeat -348px 100%}
+.moduleReviewHighlight h4{font-size:1.8em;color:#808080;text-transform:uppercase;display:inline;margin-top:0;padding-top:0}
+.moduleReviewHighlight img.feedImage{display:block;margin-top:0}
+.moduleReviewHighlight ul{margin-top:20px;margin-bottom:0}
+.flickrLst{margin-top:0!important;margin:0;padding:0}
+.moduleReviewHighlight ul li{padding-top:20px!important;padding-bottom:10px;background:transparent url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x 0 100%}
+.moduleReviewHighlight ul li.last{margin:0;padding:0;background-image:none}
+.moduleReviewHighlight h5{margin:0;font-size:1.6em;font-weight:normal}
+.moduleReviewHighlight h5 a{color:#000}
+.moduleReviewHighlight img.teaserImage{float:left;width:70px;margin:0 10px 5px 0}
+.moduleReviewHighlight .caption{margin:10px 0 10px 0!important;font-size:1.1em;color:#999}
+.moduleReviewHighlight .imageItem h5,.moduleReviewHighlight .imageItem .caption{margin-left:80px}
+.moduleReviewHighlight p{margin-bottom:15px;font-size:1.2em;line-height:1.2;color:#4d4d4d}
+.moduleReviewHighlight .link{text-align:right}
+.moduleOffersAccordion{background: url(http://www.visitbritain.com/build/images/background-offersaccordion_bottom.png?Lo0P=b2c67fb7217cde33a58fe16424fcf877424)  no-repeat -11px bottom;padding-bottom:19px}
+.moduleOffersAccordion .listOffersAccordionContainer{position:relative;background-color:transparent;background:0}
+.listOffersAccordionContainer h5{height:30px;padding:10px 20px 0;font-size:2.1em;font-weight:normal;line-height:1;margin:20px 0}
+.moduleOffersAccordion ul.listOffersAccordion{background: url(http://www.visitbritain.com/build/images/background-offersaccordion.png?Lo0P=14ef1664a616e418d5af57abce88fdd93689)  0 -20px;margin-bottom:0}
+.moduleOffersAccordion ul.listOffersAccordion li{border-top:1px solid #ccc;margin-top:17px}
+.moduleOffersAccordion ul.listOffersAccordion li.first{border:0;background: url(http://www.visitbritain.com/build/images/background-offersaccordion.png?Lo0P=14ef1664a616e418d5af57abce88fdd93689)  -300px 0}
+.moduleOffersAccordion ul.listOffersAccordion h5{padding:3px 10px 5px;font-size:2.1em;font-weight:normal;color:#fff;line-height:1;background-color:#03428d;margin-bottom:0}
+.moduleOffersAccordion ul.listOffersAccordion h5:before{content:'-- '}
+.moduleOffersAccordion ul.listOffersAccordion li.first h5{background:#fff url(http://www.visitbritain.com/build/images/background-offersaccordion-first.png?Lo0P=1f38b013636e8e39c9dad138437b2d05466)  no-repeat 0 0}
+.moduleOffersAccordion ul.listOffersAccordion li.first h5:active{background-color:transparent}
+.moduleOffersAccordion ul.listOffersAccordion ul{padding:20px 15px 0;margin:0;border:1px solid #dcdcdc;border-bottom:0;background:#fff}
+.moduleOffersAccordion ul.listOffersAccordion ul li{padding-bottom:10px;border:0;font-family:Arial,sans-serif}
+.moduleOffersAccordion ul.listOffersAccordion ul li h6{font-size:1.2em;font-weight:normal;margin:0 0 10px}
+.moduleOffersAccordion ul.listOffersAccordion ul li p{font-size:1.2em;color:#666;line-height:1.2;margin:0 0 10px}
+.moduleOffersAccordion ul.listOffersAccordion ul li a.imageLink{float:left;margin-right:15px}
+.moduleOffersAccordion .mask{background:0}
+.moduleOffersAccordion .mask-left{left:0;background-position:0 100%}
+.moduleOffersAccordion .mask-right{right:0;background-position:100% 100%}
+.moduleAttractionFinder{margin-bottom:20px}
+#Popup .moduleFormConfirmation{margin-top:20px}
+.moduleFormConfirmation p{margin-bottom:20px;font-size:1.4em;line-height:1.4}
+.modulePagePrimaryHeading{margin-bottom:40px;padding-bottom:20px;background:transparent url(http://www.visitbritain.com/build/images/image_landingheading_bar.png?Lo0P=c245e05f886923fa775c1ee60f91dc1b230)  no-repeat 0 100%}
+.modulePageSecondaryHeading{overflow:hidden;padding:0 0 12px 10px;border-left:7px solid #000;border-bottom:1px solid #b2b2b2;white-space:nowrap;text-overflow:ellipsis}
+.modulePersonalisationHeading{padding-top:45px;background:transparent url(http://www.visitbritain.com/build/images/background-personalisationheader.png?Lo0P=5290ab73c78fa081fbf8407fdd9046661461)  no-repeat 50% 0}
+.moduleSitemapHeading{margin-top:40px;padding-bottom:15px;background:#fff url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x 0 100%}
+.errorModule{min-height:324px;background:#fff url(http://www.visitbritain.com/build/images/image-404.png?Lo0P=45f87be0f6446c14ef982b92b3301f3d8166)  no-repeat 100% 120px}
+.errorModule h1{margin-bottom:30px;font-size:3.6em;font-weight:normal}
+.errorModule p.leadIn{width:auto;margin-bottom:40px;font-family:Georgia,serif;font-size:2em}
+.errorModule p.leadIn strong{font-weight:normal}
+.errorModule p{width:370px;margin-bottom:15px;font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.2}
+.errorModule .standardSearch{float:left;margin-top:30px;padding:10px;background-color:#f2f2f2}
+.eventHeader{margin-bottom:20px;margin-top:20px;padding-bottom:20px;background:transparent url(http://www.visitbritain.com/build/images/image_landingheading_bar.png?Lo0P=c245e05f886923fa775c1ee60f91dc1b230)  no-repeat 0 100%;overflow:hidden}
+.eventThumbnail{float:left;width:160px;margin-right:25px}
+.eventHeadline{float:left;width:415px}
+div.divider{position:relative;height:50px;margin:-20px 0 20px;background:transparent url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x 0 20px}
+div.divider div{position:absolute;top:0;left:0;width:70px;height:50px;background-repeat:no-repeat;background-color:transparent}
+div.divider-ilhs div{background-position:0 0}
+div.divider-irhs div{left:auto;right:0;background-position:100% 0}
+div.divider-1 div{background-image: url(http://www.visitbritain.com/build/images/dividers/image-divider-1.jpg?Lo0P=b2451889e3ebf5cab12427680fe1e1461997) }
+div.divider-2 div{background-image: url(http://www.visitbritain.com/build/images/dividers/image-divider-2.jpg?Lo0P=446416135e3e5ced1fbed9bb3dd63e1e2011) }
+div.divider-3 div{background-image: url(http://www.visitbritain.com/build/images/dividers/image-divider-3.jpg?Lo0P=80062622023111e60a84e4b6a2479a441739) }
+div.divider-4 div{background-image: url(http://www.visitbritain.com/build/images/dividers/image-divider-4.jpg?Lo0P=d1e56d59187e130d2d79af49919232751242) }
+.dividerSidebar{height:60px;margin:-20px 0 10px;background-repeat:no-repeat;background-position:0 0}
+.dividerSidebar-1{background-image: url(http://www.visitbritain.com/build/images/dividers/divider-s1.jpg?Lo0P=8d645e5c5d4773c11b3c85a90fa7450e2974) }
+.eventHeading{margin-bottom:7px}
+.eventHeadline a{font-size:1.1em}
+.eventDirections{margin-bottom:20px;border-bottom:2px dotted #ccc;padding-bottom:5px}
+.eventContent p,.eventDirections p{color:#666;font-family:Arial;font-size:1.2em;line-height:1.4;margin-bottom:10px}
+.moduleShop .moduleDiscountsHeading{background: url(http://www.visitbritain.com/build/images/background-discounts.jpg)  no-repeat scroll 100% 0 transparent;min-height:80px;padding:0 50px 0 20px}
+p.discountHeading{font-family:Georgia,arial;font-size:1.8em;font-style:italic;font-weight:bold}
+.contentSide h5{font-family:Arial;font-size:1.2em;font-weight:normal;margin-bottom:2px}
+.eventCategoryHeading{background: url(http://www.visitbritain.com/build/images/image_landingheading_bar.png?Lo0P=c245e05f886923fa775c1ee60f91dc1b230)  no-repeat scroll 0 100% transparent;margin-bottom:15px;padding-bottom:20px}
+.eventCategoryContent p{background: url(http://www.visitbritain.com/build/images/fromers-logo.jpg)  no-repeat bottom right;padding-bottom:60px}
+.eventCategoryContent{background: url(http://www.visitbritain.com/build/images/mini-border.jpg)  no-repeat left bottom;padding-bottom:30px;margin-bottom:20px}
+.eventMainTeaser{background: url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x scroll 0 100% #fff;padding-bottom:15px}
+.eventTime{font-weight:bold}
+.eventTime span{display:block;font-weight:normal}
+.moduleSmallTeaser img.teaserSmall{width:105px}
+.moduleSmallTeaser img.teaserSide{width:70px;height:53px}
+.moduleSmallTeaser .contentWide{margin-left:125px}
+.moduleSmallTeaser .contentSide{margin-left:90px}
+.contentSide .eventTime{margin-bottom:0}
+.sideTab{padding:10px;margin-bottom:0}
+.greyTab{background:#f1f1f1}
+.offersModule{margin-top:20px}
+.eventContent blockquote{font-style:italic;margin:auto;width:500px}
+.todos li{color:#666;font-family:Arial,sans-serif;font-size:1.1em;line-height:1.4;margin-bottom:10px}
+.moduleTeaserList ul{margin-bottom:15px}
+.moduleTeaserList li{padding:10px 0;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 100%}
+.moduleTeaserList li.first{padding-top:0}
+.moduleTeaserList li h4{margin-bottom:3px;font-size:1.6em;font-weight:normal}
+.moduleTeaserList li p{font-family:Arial,sans-serif;font-size:1.2em;color:#666;line-height:1.2}
+.moduleTeaserImageList{min-height:74px}
+.moduleTeaserImageList.loading{background:transparent url(http://www.visitbritain.com/build/images/icon-loader.gif?Lo0P=cf4ad324ee01bf66eb9df9a7d0a8dd8d2834)  no-repeat 50% 50%}
+.moduleTeaserImageList li{padding:10px;background-color:#f2f2f2}
+.moduleTeaserImageList li.alt{background-color:#fff}
+.moduleTeaserImageList li img{float:left;width:70px;height:53px;margin-right:20px}
+.moduleTeaserImageList li .teaserContent{margin-left:90px}
+.moduleTeaserImageList li .teaserContentNoImage{margin-left:0}
+.moduleTeaserImageList li h5{margin-bottom:2px;font-family:Arial;font-size:1.2em;font-weight:normal}
+.moduleTeaserImageList li p{margin-bottom:3px;font-family:Arial;font-size:1.1em;line-height:1.2}
+.moduleTeaserImageList li a.moreLink{font-size:1.1em}
+.moduleTeaserImageList p{font-size:1.2em}
+.moduleLinkList li{padding:10px 10px 10px 35px;font-family:Arial,sans-serif;font-size:1.2em;background:#fff url(http://www.visitbritain.com/build/images/icon-linklist.png?Lo0P=679d080b30d83efbe67469bdb99da801285)  no-repeat 0 11px}
+.modulePlanList{margin-top:-10px}
+.modulePlanList li{margin-top:30px}
+.modulePlanList li img{float:left;width:70px;height:60px;margin-right:15px}
+.modulePlanList li .content{margin-left:85px}
+.modulePlanList li h5{margin-bottom:7px}
+.modulePlanList li h5 a{padding:1px 4px;font-family:Arial,sans-serif;font-size:1.3em;color:#fff;text-transform:uppercase;background-color:#0078db}
+.modulePlanList li p{font-family:Arial,sans-serif;font-size:1.2em;color:#4d4d4d;line-height:1.2}
+.moduleTopTensList{margin-top:-10px}
+.moduleTopTensList li{clear:both}
+.moduleTopTensList strong{float:left;width:1.18em;padding-right:5px;font-size:3.8em;font-weight:normal;text-align:right;background-color:#fff}
+.moduleTopTensList span{display:block;margin-left:2.812em;padding:15px 20px 5px;font-size:1.6em;background:transparent url(http://www.visitbritain.com/build/images/background-divider.png?Lo0P=d7e08e71a06f25aae4ab2770fd72e4d9136)  repeat-x 0 100%}
+.moduleResultsCategoryList h4{margin-bottom:20px;font-size:1.6em;font-weight:normal}
+.moduleResultsCategoryList ul{background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 0}
+.moduleResultsCategoryList li{padding:7px 0;font-size:1.4em;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 100%}
+.moduleResultsList li{padding:13px 10px 10px;background:transparent url(http://www.visitbritain.com/build/images/border-dashed-horizontal-grey.png?Lo0P=9fae40ab0028d91b9121681aaa6f14e1136)  repeat-x 0 0}
+.moduleResultsList h3{margin-bottom:10px}
+.moduleResultsList h3 a{padding:1px 4px;font-family:Arial,sans-serif;font-size:1em;color:#fff;text-transform:uppercase;background-color:#0078db}
+.moduleResultsList h4{margin-bottom:7px;font-size:1.6em;font-weight:normal}
+.moduleResultsList h4 a{color:#000}
+.moduleResultsList p{margin-bottom:6px;font-family:Arial,sans-serif;font-size:1.2em;color:#666}
+.moduleResultsList div a{font-family:Arial,sans-serif;font-size:1.2em;line-height:1}
+.moduleSitemapList h3{margin-bottom:10px;font-size:1.6em;font-weight:normal}
+.moduleSitemapList li{margin:0 0 3px 20px;font-size:1.4em}
+.moduleSitemapList li a:before{content:'-- '}
+.moduleSitemapList li h4{margin-bottom:5px;font-weight:normal}
+.moduleSitemapList li ul li{font-family:Arial,sans-serif;font-size:.786em}
+.sponsorContainer{text-align:right;margin-top:20px;display:block}
+#VBCookie{display:none}
+.MSVE_Dashboard_V6 #Compass{width:49px;height:49px}
+.logodiv{margin-top:60px;text-align:right}
+.LargeTeaserflickrImgDiv a span:hover,.SmallTeaserflickrImgDiv a span:hover{text-decoration:underline}
+.fb_iframe_widget{margin-bottom:20px}
+.fbLike{float:left;margin:0 0 10px 0;width:100px;overflow:hidden;clear:both}
+.heroArticle .tetris{background:transparent url(http://www.visitbritain.com/build/images/bg-tetris.png?Lo0P=da8fdb86e0f9bd3e84a20236349d5afc970)  repeat-x left top;background-origin:padding-box;background-size:auto auto;bottom:20px;padding:5px 9px 5px 8px;position:absolute;left:0;width:94%;margin:0 5px 0 6px}
+.heroArticle .tetris p.caption{margin:0 0 10px;font-size:1.3em}
+.heroArticle .tetris a .credit,.heroArticle .tetris p.credit a{color:#0077d8;font-size:1.1em}
+.heroArticle .tetris p.credit{margin:0!important;font-size:1.1em}
+.heroArticle .tetris h3{margin-bottom:2px}
+.listOffersAccordionContainer .ui-accordion-li-fix{*margin-top:0!important}
+#mySlider{width:940px;margin:auto;position:relative;height:450px}
+#mySlider .shadow{background: url(http://www.visitbritain.com/build/images/fadeto.png?Lo0P=dfd0b321ccdee343de825ce0b22a26002830) ;height:54px;width:100%;top:316px;position:absolute;z-index:10}
+#mySlider .slideShow{position:relative;height:370px}
+#mySlider .image{position:absolute;left:0;top:0;height:450px}
+#mySlider .image h3{font:normal 26px Georgia,"Times New Roman",Times,serif;margin:0 0 10px;padding:5px 10px;background: url(http://www.visitbritain.com/build/images/sli-trans.png?Lo0P=0a7d73dc9ee67d0056c71a780b6beee8995) ;color:#03428d}
+#mySlider .image .desc{position:absolute;z-index:15;left:34px;top:47px;width:373px}
+#mySlider .image .desc .content{padding:10px;font:normal 13px/18px Arial,Helvetica,sans-serif;color:#4d4d4d;background: url(http://www.visitbritain.com/build/images/sli-trans.png?Lo0P=0a7d73dc9ee67d0056c71a780b6beee8995) }
+#mySlider .image .desc a.credit{position:absolute;right:-534px;top:344px;z-index:15;font:12px Arial,Helvetica,sans-serif;color:#666}
+#mySlider .image .desc a.credit:hover{text-decoration:underline;color:#000}
+#mySlider .image .desc .content p{margin:0 0 10px}
+#mySlider .image .desc .content a.more{background: url(http://www.visitbritain.com/build/images/slirmore.png?Lo0P=addce8ad12242297311a200f45cd956a1074)  no-repeat 0 4px;color:#06c;padding:0 0 0 10px;text-decoration:none}
+#mySlider .image .desc .content a.more:hover{text-decoration:underline}
+#mySlider .navigation{position:absolute;padding:0 21px;float:left;height:90px;overflow:hidden;z-index:11;top:360px}
+#mySlider .navigation .thumbs .thumb{float:left;margin:0 10px 0 0;opacity:.5;filter:alpha(opacity = 50)}
+#mySlider .navigation .thumbs .test{margin-left:-100px}
+#mySlider .navigation .thumbs .active,#mySlider .navigation .thumbs .active2{opacity:1;filter:alpha(opacity = 100)}
+#mySlider .navigation .thumbs{width:448px;overflow:hidden}
+#mySlider .controls div{width:63px;height:62px;background: url(http://www.visitbritain.com/build/images/prev.png?Lo0P=d9c1a7a5b500cee20bda02d20186cc0c2851) ;text-indent:-999em;position:absolute;left:-8px;z-index:999;top:18px}
+#mySlider .controls div.nextBG{background: url(http://www.visitbritain.com/build/images/next.png?Lo0P=e84f7d40fd4c9a87e4809c32dbb263132890) ;left:auto;right:1px}
+#mySlider .thumbs .desc{position:absolute;left:-9999em;top:-9999em}
+.tCont .minWidth2{float:left;width:300px}
+.tCont .teaser-blue{float:right;width:300px;border-top:8px solid #03428d;padding-top:20px}
+.tCont .teaser-purple{float:right;width:300px;border-top:8px solid #934899;padding-top:20px}
+.tCont .teaser-green{float:right;width:300px;border-top:8px solid #bdd421;padding-top:20px}
+.tCont h2{font:normal 24px Georgia,"Times New Roman",Times,serif;color:#000;margin:0 0 10px}
+.tCont .teaser-blue a{background: url(http://www.visitbritain.com/build/images/icon-link-more.png?Lo0P=e63f50319652fbadb6837817fc25821c181)  no-repeat 0 1px;padding:0 0 0 10px}
+.tCont .teaser-purple a{background: url(http://www.visitbritain.com/build/images/icon-link-more.png?Lo0P=e63f50319652fbadb6837817fc25821c181)  no-repeat 0 1px;padding:0 0 0 10px}
+.tCont .teaser-green a{background: url(http://www.visitbritain.com/build/images/icon-link-more.png?Lo0P=e63f50319652fbadb6837817fc25821c181)  no-repeat 0 1px;padding:0 0 0 10px}
+.tCont p{line-height:1.2em!important}
+.tCont .teaser-blue p a{background:0}
+.tCont .teaser-purple p a{background:0}
+.tCont .teaser-green p a{background:0}
+.cl{clear:both}
+#socialWidget{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat right bottom;font-family:arial;height:500px;overflow-y:hidden;padding-bottom:20px;margin-bottom:20px;width:300px}
+#socialWidget ul#widgetTabs{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat top left;border-bottom:1px solid #dcdcdc;margin:0;padding:8px 0 0 9px;float:left;width:291px;min-height:37px}
+#socialWidget ul#widgetTabs li{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -5px -758px;float:left;height:31px;width:32px;margin-right:4px}
+#socialWidget ul#widgetTabs li.selected{background:#00418f}
+#socialWidget ul#widgetTabs li a{height:31px;width:32px}
+#socialWidget ul#widgetTabs li a.Facebook{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat 0 -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.Facebook,#socialWidget ul#widgetTabs li a:hover.Facebook{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -1px -159px;display:block}
+#socialWidget ul#widgetTabs li a.LoveUKonFlickr{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -72px -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.LoveUKonFlickr,#socialWidget ul#widgetTabs li a:hover.LoveUKonFlickr{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -73px -159px;display:block}
+#socialWidget ul#widgetTabs li a.Twitter{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -36px -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.Twitter,#socialWidget ul#widgetTabs li a:hover.Twitter{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -37px -159px;display:block}
+#socialWidget ul#widgetTabs li a.VisitBritain-TV{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -144px -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.VisitBritain-TV,#socialWidget ul#widgetTabs li a:hover.VisitBritain-TV{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -145px -159px;display:block}
+#socialWidget ul#widgetTabs li a.VisitBritainBlog{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -108px -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.VisitBritainBlog,#socialWidget ul#widgetTabs li a:hover.VisitBritainBlog{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -109px -159px;display:block}
+#socialWidget ul#widgetTabs li a.CuriosityBlog{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -180px -199px;display:block}
+#socialWidget ul#widgetTabs li.selected a.CuriosityBlog,#socialWidget ul#widgetTabs li a:hover.CuriosityBlog{background: url(http://www.visitbritain.com/build/images/social-icons/social-widget-images.png?Lo0P=c0fb051af237c1e8414d43af1c3c432816786)  no-repeat -181px -159px;display:block}
+#socialWidget #widgetContent{border-right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;height:434px;margin:0;padding:10px;overflow-y:auto}
+#socialWidget .hideFaceBook{border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;height:444px;margin:0;overflow-y:hidden;padding:10px 10px 0 10px}
+#socialWidget #widgetContent.LoveUKonFlickr .blogTitle{color:#838383;font:24px Georgia,"Times New Roman",Times,serif;margin-top:0;text-transform:uppercase}
+#socialWidget #widgetContent.LoveUKonFlickr .feedContent{max-height:262px;margin-top:0;overflow-y:hidden}
+#socialWidget #widgetContent.LoveUKonFlickr .feedContent .feedTitle{color:#000;font:bold 16px/100% arial;margin-top:0}
+#socialWidget #widgetContent.LoveUKonFlickr .feedContent .authorCreatedDate{color:#b5b5c2;margin-top:0}
+#socialWidget #widgetContent .readMore{font:normal 12px/100% arial;margin:20px 0;text-align:right!important}
+#socialWidget #widgetContent.LoveUKonFlickr .readMore{border-bottom:1px dotted #787878;padding:0 10px 10px 0}
+#socialWidget #widgetContent .readMore a{background: url(http://www.visitbritain.com/build/images/social-icons/readmore-icon.gif?Lo0P=1e6ce0c2009524d6ea788d9256639c9796)  no-repeat top right;color:#007cda;padding:3px 20px 0 0}
+#socialWidget #widgetContent.Twitter .feedContent{border-bottom:1px solid #eee;color:#666;font:normal 11px tahoma;margin-bottom:19px;padding-bottom:10px}
+#socialWidget #widgetContent.Twitter .feedContent img{float:left;margin:0}
+#socialWidget #widgetContent.Twitter .feedContent .description{padding:0 0 0 50px}
+#socialWidget #widgetContent.Twitter .feedContent .links{padding:0 0 0 50px;text-align:right}
+#socialWidget #widgetContent.Twitter .feedContent .feedTitle{color:#000;font:bold 13px georia,arial;height:15px;overflow-y:hidden;margin-bottom:5px}
+#socialWidget #widgetContent.Twitter .feedContent .feedTitle span{color:#b3b3b3;font:normal 11px tahoma,arial}
+#socialWidget #widgetContent.CuriosityBlog .feedContent,#socialWidget #widgetContent.VisitBritainBlog .feedContent,#socialWidget #widgetContent.VisitBritain-TV .feedContent{border-bottom:1px dotted #000;color:#666;display:inline-block;font:normal 11px tahoma;margin-bottom:19px;padding:0 0 10px 0;width:100%}
+#socialWidget #widgetContent.CuriosityBlog .feedContent .imgVideo,#socialWidget #widgetContent.VisitBritainBlog .feedContent .imgVideo,#socialWidget #widgetContent.VisitBritain-TV .feedContent .imgVideo{float:left;height:62px;margin:0 5px 5px 0;width:111px;overflow:hidden}
+#socialWidget #widgetContent.CuriosityBlog .feedContent .imgVideo p,#socialWidget #widgetContent.VisitBritainBlog .feedContent .imgVideo p,#socialWidget #widgetContent.VisitBritain-TV .feedContent .imgVideo p{margin:0}
+#socialWidget #widgetContent.CuriosityBlog .feedContent .imgVideo iframe,#socialWidget #widgetContent.CuriosityBlog .feedContent .imgVideo img,#socialWidget #widgetContent.VisitBritainBlog .feedContent .imgVideo iframe,#socialWidget #widgetContent.VisitBritainBlog .feedContent .imgVideo img,#socialWidget #widgetContent.VisitBritain-TV .feedContent .imgVideo iframe,#socialWidget #widgetContent.VisitBritain-TV .feedContent .imgVideo img{height:62px;width:111px}
+#socialWidget #widgetContent.CuriosityBlog .feedContent .feedTitle,#socialWidget #widgetContent.VisitBritainBlog .feedContent .feedTitle,#socialWidget #widgetContent.VisitBritain-TV .feedContent .feedTitle{color:#000;font:bold 13px georia,arial;margin:0 0 5px 0;text-transform:capitalize;min-height:62px}
+#socialWidget #widgetContent.CuriosityBlog .feedContent .readMore,#socialWidget #widgetContent.CuriosityBlog .feedContent .description,#socialWidget #widgetContent.VisitBritainBlog .feedContent .readMore,#socialWidget #widgetContent.VisitBritainBlog .feedContent .description,#socialWidget #widgetContent.VisitBritain-TV .feedContent .readMore,#socialWidget #widgetContent.VisitBritain-TV .feedContent .description{font:normal 12px/120% arial;margin:0;margin:0 0 5px 0;text-align:left}
+.loader{margin:150px 0 0 50px}
+.joinConversation{border-bottom:1px solid #ccc;margin:5px 10px 5px 10px;padding-bottom:5px;text-align:left}
+.joinConversation a{font-size:11px;font-weight:bold}
+.privacyVB{background: url(http://www.visitbritain.com/build/images/yourPrivacyGreenBg.png?Lo0P=a81de0b0099ca54f586deeb25209a5a51305)  no-repeat top left;height:16px;padding-left:12px;display:inline-block;color:#fff;font:normal 10px arial;text-decoration:none;margin-right:10px}
+.privacyVB span{background: url(http://www.visitbritain.com/build/images/yourPrivacyGreenBg.png?Lo0P=a81de0b0099ca54f586deeb25209a5a51305)  no-repeat right bottom;height:16px;line-height:15px;padding-right:12px;color:#fff!important;text-decoration:none!important;display:block!important;font:normal 11px arial!important}
+.privacyVB:hover,.privacyVB:hover span{text-decoration:none!important;cursor:pointer}
+#PopupTitle{margin-top:0!important}
+#SubscribeToNewsletterForm h1{margin:0}
+a#NewsletterLink1{background: url(http://www.visitbritain.com/build/images/subscribeLinks.jpg?Lo0P=d1f2a5d03abfbbbb83e1da2aa50af3f04627)  no-repeat top left;height:37px;line-height:35px;width:258px;display:block;padding-left:42px;color:#fff;font-size:13px;font-style:normal;margin-bottom:20px;text-decoration:none;font-weight:bold}
+a#NewsletterLink1 span{background: url(http://www.visitbritain.com/build/images/subscribeLinksInner.png?Lo0P=fd5f594acef89f09b0c0dc2802dde5c0435)  no-repeat top right;display:inline-block;padding-right:35px;text-transform:capitalize;color:#fff}
+a#NewsletterLink1:hover{background: url(http://www.visitbritain.com/build/images/subscribeLinksNormal.png?Lo0P=dc94b48b8fa5e3d1b502b79a04ec7aee513)  no-repeat top left;height:37px;line-height:35px;width:258px;display:block;padding-left:42px;color:#b2b2b2;font-size:13px;font-style:normal;margin-bottom:20px;text-decoration:none}
+a#NewsletterLink1:hover span{background: url(http://www.visitbritain.com/build/images/subscribeLinksInnerNormal.png?Lo0P=ea4770d64aa434003020ffbebce7617e1194)  no-repeat top right;display:inline-block;padding-right:35px;text-transform:capitalize;color:#d53289}
+.newsletterLabelFontSize,.newsletterLabelFontSize span{font-size:10px!important}
+.mpu{margin-bottom:15px}
+/* */
